@@ -19,7 +19,7 @@
 
 </ul>
 
-###The Screen will have three options for the user to pick from:
+### The Screen will have three options for the user to pick from:
 
 <ol>
   <li>"Find Drinks" will take them to the default top drink list page</li>
@@ -28,7 +28,7 @@
 </ol>
 
 
-####On the drink search page you will be able to:
+#### On the drink search page you will be able to:
 
 <ul>
   <li>Search will a text search bar</li>
@@ -36,7 +36,7 @@
   <li>Enter an advanced filter</li>
 </ul>
 
-####Once a drink is selected you will be able:
+#### Once a drink is selected you will be able:
 
 <ul>
   <li>To rate the drink in 1-5 stars.</li>
@@ -45,14 +45,14 @@
   <li>View other pictures uploaded by other users</li>
 </ul>
 
-####The interactive map will allow users to:
+#### The interactive map will allow users to:
 
 <ul>
   <li>Use the same text and advanced filter to search with in the map area</li>
   <li>See the nearby bars with their ratings</li>
 </ul>
 
-####The My Account page will include:
+#### The My Account page will include:
 
 <ul>
   <li>A scrollable list of their previous ratings; sortable by rating or recently rated</li>
