@@ -1,7 +1,3 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-</style>
-
 ## Summary
 
 **Sip & Score** is an app intended to allow users to find new cocktail drinks, new bars. Users will be able to rate the drink in a general setting, the version of the cocktail made by  a specific bar with an option to include a picture, and rate a bar as a whole. When a user creates an account they will then be able to save favorite drinks and bars. There will be an interactive map to find new bars close by. As more users rate the drinks at individual bars the top drinks for the given bar will be displayed when a bar is selected.
@@ -75,7 +71,7 @@
   <li>Gps/ Google Maps</li>
   <li>Cocktail data base</li>
   <li>G-sign in</li>
-  <li>Server to hold user picuters and drink ratings</li>
+  <li>Server to hold user pictures and drink ratings</li>
 </ul>
 
 ## Stretch goals/possible enhancements 
