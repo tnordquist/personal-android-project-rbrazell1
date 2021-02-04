@@ -39,7 +39,7 @@
 #### Once a drink is selected you will be able:
 
 <ul>
-  <li>To rate the drink in 1-5 stars.</li>
+  <li>To rate the drink in 1-5 stars</li>
   <li>See the average rating</li>
   <li>Upload a picture of the drink you ordered</li>
   <li>View other pictures uploaded by other users</li>
