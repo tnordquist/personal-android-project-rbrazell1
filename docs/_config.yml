@@ -10,8 +10,8 @@ titles_from_headings:
 
 title: "Sip & Score"
 description: "Find your next favorite cocktail and bar"
-author: "Russell Brazell"
-  name: "Java+Android Student"
+author:
+  name: "Russell Brazell"
 
 # Do not change the following line.
   copyright: true
