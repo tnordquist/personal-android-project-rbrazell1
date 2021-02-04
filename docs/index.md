@@ -19,7 +19,7 @@
 
 </ul>
 
-## The Screen will have three options for the user to pick from:
+### The Screen will have three options for the user to pick from:
 
 <ol>
   <li>"Find Drinks" will take them to the default top drink list page</li>
