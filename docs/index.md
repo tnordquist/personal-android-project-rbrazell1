@@ -91,6 +91,6 @@ Someone who likes to go bar hopping
 <ul>
 
   <li>Share with common social media</li>
-  <li>Add a searchable off line data base of drink recipes</li>
+  <li>Add a database to search for new kinds of drinks to order</li>
 
 </ul>
