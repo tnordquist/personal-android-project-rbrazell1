@@ -1,15 +1,24 @@
 ## Summary
 
-**Sip & Score** is an app intended to allow users to find new cocktail drinks, new bars. Users will be able to rate the drink in a general setting, the version of the cocktail made by  a specific bar with an option to include a picture, and rate a bar as a whole. When a user creates an account they will then be able to save favorite drinks and bars. There will be an interactive map to find new bars close by. As more users rate the drinks at individual bars the top drinks for the given bar will be displayed when a bar is selected.
-
+**Sip & Score** is an app intended to allow users to rate new cocktail drinks and save new bars. Users will be able to take pictures of the drink;and give the drink a rating with a comment. There will be an interactive map to save new bars they are at. 
 
 ## Intended users
 
+
+### Target user: 
+
+Someone who likes to go bar hopping
+
+#### User stories:
+
 <ol>
-  <li>As a person who is new to drinking I want to see highly rated drinks to help narrow down which drinks I might enjoy.</li>
-  <li>When I go out on the town I want to be able to see which other bars nearby make my favorite drink the best</li>
-  <li>I'm always trying something new, I want to be able to rate and save my favorite drinks</li>
+
+  <li>I want to be able to take a picture of my drinks and attach a comment to the pictures so that I am able to make recommendations to my friends later.</li><br>
+  <li>I want to be able to add a new bar that I'm at to my saved places on Google maps so I can keep track of the places I have been to.</li><br>
+  <li>I want to be able to show all the drink ratings and reviews I've saved for a specific bar so I can go back to the bars I liked the best.</li><br>
+
 </ol>
+
 
 ## Functionality
 
@@ -22,61 +31,66 @@
 ### The Screen will have three options for the user to pick from:
 
 <ol>
-  <li>"Find Drinks" will take them to the default top drink list page</li>
-  <li>"Find Bars" will take them to the interactive map that allows them to search near by</li>
-  <li>"My Account" will take them to account</li>
+
+  <li>"Add Bar" Will take them to the interactive google maps to add their current location to automatically tag pictures.</li>
+  <li>"Add Drink" Will take them to the Camera and then the rating page.</li>
+  <li>"My drinks" Will take them to the list of the bars they added.</li>
+
 </ol>
-
-
-#### On the drink search page you will be able to:
-
-<ul>
-  <li>Search will a text search bar</li>
-  <li>See a default list of top rated drinks</li>
-  <li>Enter an advanced filter</li>
-</ul>
-
-#### Once a drink is selected you will be able:
-
-<ul>
-  <li>To rate the drink in 1-5 stars</li>
-  <li>See the average rating</li>
-  <li>Upload a picture of the drink you ordered</li>
-  <li>View other pictures uploaded by other users</li>
-</ul>
 
 #### The interactive map will allow users to:
 
 <ul>
-  <li>Use the same text and advanced filter to search with in the map area</li>
-  <li>See the nearby bars with their ratings</li>
+
+  <li>Add their current location to the bar they are at</li>
+  <li>Add the current bar to their saved places on Google maps</li>
+
 </ul>
 
-#### The My Account page will include:
+#### Once add a drink is selected you will be able:
 
 <ul>
-  <li>A scrollable list of their previous ratings; sortable by rating or recently rated</li>
+
+  <li>Take a picture of the drink you ordered</li>
+  <li>To rate the drink in 1-5 stars</li>
+  <li>Add a short comment about your drink</li>
+  <li>Add it to the list of drinks from the bar your currently at</li>
+
 </ul>
 
+#### The My Drinks page will include:
+
+<ul>
+
+  <li>A list of the bars they saved previously had rated</li>
+  <li>After selecting a bar from the list, a list of all previous drink ratings and pictures will be displayed</li>
+
+</ul>
 
 ## Persistent data
 
 <ul>
-  <li>All the ratings of drinks and bars</li>
+
+  <li>The names and addresses and phone numbers of all the bars they have drink ratings for</li>
+  <li>All the pictures of drinks they have rated</li>
+  <li>All the ratings and comments of drinks they have rated</li>
+
 </ul>
     
 ## Device/external services
 
 <ul>
-  <li>Gps/ Google Maps</li>
-  <li>Cocktail data base</li>
-  <li>G-sign in</li>
-  <li>Server to hold user pictures and drink ratings</li>
+
+  <li>Gps/Google Maps</li>
+  <li>Camera</li>
+
 </ul>
 
 ## Stretch goals/possible enhancements 
 
 <ul>
+
   <li>Share with common social media</li>
   <li>Add a searchable off line data base of drink recipes</li>
+
 </ul>
