@@ -19,6 +19,17 @@ Someone who likes to go bar hopping
 
 </ol>
 
+### Target user:
+
+A person who is new to town
+
+#### User story:
+
+<ol>
+
+  <li>I want to be able to see bars close to my location so I can decide where the closest bar is.</li>
+
+</ol>
 
 ## Functionality
 
@@ -44,6 +55,7 @@ Someone who likes to go bar hopping
 
   <li>Add their current location to the bar they are at</li>
   <li>Add the current bar to their saved places on Google maps</li>
+  <li>Search near by to see the closest bars</li>
 
 </ul>
 
