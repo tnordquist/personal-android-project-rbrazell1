@@ -15,7 +15,7 @@ Someone who likes to go bar hopping
 
   <li>I want to be able to take a picture of my drinks and attach a comment to the pictures so that I am able to make recommendations to my friends later.</li><br>
   <li>I want to be able to add a new bar that I'm at to my saved places on Google maps so I can keep track of the places I have been to.</li><br>
-  <li>I want to be able to show all the drink ratings and reviews I've saved for a specific bar so I can go back to the bars I liked the best.</li><br>
+  <li>I want to be able to show all the drink ratings and reviews I've saved for a specific bar so I can go back to the bars I liked the best.</li>
 
 </ol>
 
@@ -27,7 +27,7 @@ A person who is new to town
 
 <ol>
 
-  <li>I want to be able to see bars close to my location so I can decide where the closest bar is.</li>
+  <li>I want to be able to see bars close to my location so I can pick one to go to that's within walking distance.</li>
 
 </ol>
 
@@ -43,8 +43,8 @@ A person who is new to town
 
 <ol>
 
-  <li>"Add Bar" Will take them to the interactive google maps to add their current location to automatically tag pictures.</li>
-  <li>"Add Drink" Will take them to the Camera and then the rating page.</li>
+  <li>"Add Bar" Will take them to the interactive google maps to add their current location to automatically tag pictures.</li><br>
+  <li>"Add Drink" Will take them to the Camera and then the rating page.</li><br>
   <li>"My drinks" Will take them to the list of the bars they added.</li>
 
 </ol>
