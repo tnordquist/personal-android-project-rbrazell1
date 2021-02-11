@@ -1,11 +1,12 @@
 ## Summary
 
-**Sip & Score** is an app intended to allow users to rate new cocktail drinks and save new bars. Users will be able to take pictures of the drink;and give the drink a rating with a comment. There will be an interactive map to save new bars they are at. 
+**Sip & Score** is an app intended to allow users to rate new cocktail drinks and save new bars.
+Users will be able to take pictures of the drink;and give the drink a rating with a comment. There
+will be an interactive map to save new bars they are at.
 
 ## Intended users
 
-
-### Target user: 
+### Target user:
 
 Someone who likes to go bar hopping
 
@@ -13,9 +14,12 @@ Someone who likes to go bar hopping
 
 <ol>
 
-  <li>I want to be able to take a picture of my drinks and attach a comment to the pictures so that I am able to make recommendations to my friends later.</li><br>
-  <li>I want to be able to add a new bar that I'm at to my saved places on Google maps so I can keep track of the places I have been to.</li><br>
-  <li>I want to be able to show all the drink ratings and reviews I've saved for a specific bar so I can go back to the bars I liked the best.</li>
+  <li>I want to be able to take a picture of my drinks and attach a comment to the pictures
+so that I am able to make recommendations to my friends later.</li><br>
+  <li>I want to be able to add a new bar that I'm at to my saved places on Google maps
+so I can keep track of the places I have been to.</li><br>
+  <li>I want to be able to show all the drink ratings and reviews I've saved for a specific bar
+so I can go back to the bars I liked the best.</li>
 
 </ol>
 
@@ -27,7 +31,8 @@ A person who is new to town
 
 <ol>
 
-  <li>I want to be able to see bars close to my location so I can pick one to go to that's within walking distance.</li>
+  <li>I want to be able to see bars close to my location
+so I can pick one to go to that's within walking distance.</li>
 
 </ol>
 
@@ -39,13 +44,21 @@ A person who is new to town
 
 </ul>
 
-### The Screen will have three options for the user to pick from:
+### The Screen will be split into 3 parts for the user to pick from:
 
 <ol>
 
-  <li>"Add Bar" Will take them to the interactive google maps to add their current location to automatically tag pictures.</li><br>
-  <li>"Add Drink" Will take them to the Camera and then the rating page.</li><br>
-  <li>"My drinks" Will take them to the list of the bars they added.</li>
+  <li>"My drinks" Section will show them a list of the bars and drinks they've added.</li><br>
+
+<ul>
+    <li>This section will be axp 3/4 of the screen</li>
+    <li>The two buttons will be the remaining bottom 1/4</li><br>
+</ul>
+
+  <li>"Add Bar Button" Will take them to the interactive google maps to add their current location
+to automatically tag pictures.</li><br>
+
+  <li>"Add Drink Button" Will take them to the Camera and then the rating page.</li><br>
 
 </ol>
 
@@ -59,23 +72,19 @@ A person who is new to town
 
 </ul>
 
-#### Once add a drink is selected you will be able:
+#### Once add a drink is selected users will be able:
 
 <ul>
 
-  <li>Take a picture of the drink you ordered</li>
-  <li>To rate the drink in 1-5 stars</li>
-  <li>Add a short comment about your drink</li>
-  <li>Add it to the list of drinks from the bar your currently at</li>
+  <li>Take a picture of the drink they ordered</li>
 
+<ul>
+    <li>After confirming they are satisfied with the picture they will be on the rating page</li>
 </ul>
 
-#### The My Drinks page will include:
-
-<ul>
-
-  <li>A list of the bars they saved previously had rated</li>
-  <li>After selecting a bar from the list, a list of all previous drink ratings and pictures will be displayed</li>
+  <li>To rate the drink in 1-5 stars</li>
+  <li>Add a short comment about their drink</li>
+  <li>Add it to the list of drinks from the bar they're currently at</li>
 
 </ul>
 
@@ -88,7 +97,7 @@ A person who is new to town
   <li>All the ratings and comments of drinks they have rated</li>
 
 </ul>
-    
+
 ## Device/external services
 
 <ul>
@@ -98,7 +107,7 @@ A person who is new to town
 
 </ul>
 
-## Stretch goals/possible enhancements 
+## Stretch goals/possible enhancements
 
 <ul>
 
