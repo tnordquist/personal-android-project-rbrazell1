@@ -102,8 +102,15 @@ to automatically tag pictures.</li><br>
 
 <ul>
 
-  <li>Gps/Google Maps</li>
-  <li>Camera</li>
+  <li>Gps/Google Maps- the features are limited with free key</li> 
+<href>https://developer.android.com/codelabs/advanced-android-training-google-maps#1</href>
+<br>
+  <li>Camera-</li>
+<href>https://codelabs.developers.google.com/codelabs/camerax-getting-started#1</href>
+
+
+
+
 
 </ul>
 
