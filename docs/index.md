@@ -1,3 +1,9 @@
+---
+title: Overview
+description: Project summary and users
+menu: Overview
+order: 0
+---
 ## Summary
 
 **Sip & Score** is an app intended to allow users to rate new cocktail drinks and save new bars.
