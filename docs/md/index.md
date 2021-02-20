@@ -10,6 +10,8 @@ order: 0
 Users will be able to take pictures of the drink and give the drink a rating with a comment. There
 will be an interactive map to save new bars they are at.
 
+<href id="Users">Users</href>
+
 ## Functionality
 
 <ul>

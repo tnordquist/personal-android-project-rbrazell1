@@ -3,6 +3,7 @@ title: User Stories
 description: Target users and corresponding user stories
 menu: Users
 order: 15
+id = Users
 ---
 
 ## Intended users
