@@ -5,4 +5,4 @@ menu: ERD
 order: 20
 ---
 
-[![Entity Relationship Diagram](../img/svg_png/sip_and_score_erd.svg)](../img/pdf/sip_and_score_erd.pdf)
+[![Entity Relationship Diagram](img/svg_png/sip_and_score_erd.svg)](img/pdf/sip_and_score_erd.pdf)
