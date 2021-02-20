@@ -5,13 +5,13 @@ menu: Users
 order: 10
 ---
 
-## Intended users
+# Intended users
 
-### Target user:
+## Target user:
 
 Someone who likes to go bar hopping
 
-#### User stories:
+### User stories:
 
 <ol>
 
@@ -24,11 +24,11 @@ so I can go back to the bars I liked the best.</li>
 
 </ol>
 
-### Target user:
+## Target user:
 
 A person who is new to town
 
-#### User story:
+### User story:
 
 <ol>
 
