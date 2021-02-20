@@ -10,7 +10,7 @@ order: 0
 Users will be able to take pictures of the drink and give the drink a rating with a comment. There
 will be an interactive map to save new bars they are at.
 
-## <a href="User Stories">Intended Users</a>
+## <a href="users.md">Intended Users</a>
 
 ## <a href="App functionality">Functionality</a>
 
@@ -18,4 +18,4 @@ will be an interactive map to save new bars they are at.
 
 ## <a href="Service API's">Service API's</a>
 
-## <a href="Future Implementation Goals">Future Implementation Goals"</a>
+## <a href="Future Implementation Goals>Future Implementation Goals</a>

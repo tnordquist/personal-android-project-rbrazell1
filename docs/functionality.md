@@ -13,7 +13,7 @@ order: 20
 
 </ul>
 
-## The Home screen will be split into 3 parts for the user to pick from:
+### The Home screen will be split into 3 parts for the user to pick from:
 
 <ol>
 
@@ -31,7 +31,7 @@ to automatically tag pictures.</li><br>
 
 </ol>
 
-## The interactive map will allow users to:
+### The interactive map will allow users to:
 
 <ul>
 
@@ -41,7 +41,7 @@ to automatically tag pictures.</li><br>
 
 </ul>
 
-## Once add a drink is selected users will be able:
+### Once add a drink is selected users will be able:
 
 <ul>
 
