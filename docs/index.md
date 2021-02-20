@@ -7,7 +7,7 @@ order: 0
 ## Summary
 
 **Sip & Score** is an app intended to allow users to rate new cocktail drinks and save new bars.
-Users will be able to take pictures of the drink;and give the drink a rating with a comment. There
+Users will be able to take pictures of the drink and give the drink a rating with a comment. There
 will be an interactive map to save new bars they are at.
 
 ## Intended users
@@ -46,11 +46,11 @@ so I can pick one to go to that's within walking distance.</li>
 
 <ul>
 
-  <li>On running the user will land on the "home page"</li>
+  <li>On running the user will be shown a brief logo page before landing on the "home page"</li>
 
 </ul>
 
-### The Screen will be split into 3 parts for the user to pick from:
+### The Home screen will be split into 3 parts for the user to pick from:
 
 <ol>
 
@@ -85,7 +85,8 @@ to automatically tag pictures.</li><br>
   <li>Take a picture of the drink they ordered</li>
 
 <ul>
-    <li>After confirming they are satisfied with the picture they will be on the rating page</li>
+    <li>After confirming they are satisfied with the picture, 
+        skipping the option to take a picture, they will be on the rating page</li>
 </ul>
 
   <li>To rate the drink in 1-5 stars</li>
