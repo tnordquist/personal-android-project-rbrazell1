@@ -10,7 +10,7 @@ order: 0
 Users will be able to take pictures of the drink and give the drink a rating with a comment. There
 will be an interactive map to save new bars they are at.
 
-[Intended Users](https://ddc-java-12.github.io/personal-android-project-rbrazell1/users.html)
+<a xlink:href="User Stories">Intended Users</a>
 
 ## Functionality
 
