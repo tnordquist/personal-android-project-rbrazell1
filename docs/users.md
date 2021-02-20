@@ -2,7 +2,7 @@
 title: User Stories
 description: Target users and corresponding user stories
 menu: Users
-order: 15
+order: 5
 ---
 
 ## Intended users
