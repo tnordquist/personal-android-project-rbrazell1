@@ -10,12 +10,12 @@ order: 0
 Users will be able to take pictures of the drink and give the drink a rating with a comment. There
 will be an interactive map to save new bars they are at.
 
-## <a href="users.md">Intended Users</a>
+## <a href="docs/users.md">Intended Users</a>
 
-## <a href="App functionality">Functionality</a>
+## <a href="docs/functionality.md">Functionality</a>
 
-## <a href="Persistent Data">Persistent Data</a>
+## <a href="docs/persistent_data.md">Persistent Data</a>
 
-## <a href="Service API's">Service API's</a>
+## <a href="docs/api.md">Service API's</a>
 
-## <a href="Future Implementation Goals">Future Implementation Goals</a>
+## <a href="docs/goals.md">Future Implementation Goals</a>
