@@ -10,12 +10,18 @@ order: 0
 Users will be able to take pictures of the drink and give the drink a rating with a comment. There
 will be an interactive map to save new bars they are at.
 
-## <a href="docs/users.md">Intended Users</a>
+## <a href="https://ddc-java-12.github.io/personal-android-project-rbrazell1/docs/users.md">Intended Users</a>
 
-## <a href="docs/functionality.md">Functionality</a>
+## <a src="docs/functionality.md">Functionality</a>
 
 ## <a href="docs/persistent_data.md">Persistent Data</a>
 
 ## <a href="docs/api.md">Service API's</a>
 
-## <a href="docs/goals.md">Future Implementation Goals</a>
+## <a @id="goals">Future Implementation Goals</a>
+
+https://ddc-java-12.github.io/personal-android-project-rbrazell1/wireframe.html
+
+https://ddc-java-12.github.io/personal-android-project-rbrazell1/users.html
+
+https://ddc-java-12.github.io/personal-android-project-rbrazell1/functionality.html
