@@ -4,7 +4,7 @@ description: Long term goals and features to implement in the future
 menu: Future Implementation Goals
 order: 70
 ---
-<id="goals">
+
 ## Stretch goals/possible enhancements
 
 <ul>
