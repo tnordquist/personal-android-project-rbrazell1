@@ -5,4 +5,4 @@ menu: Wireframe
 order: 30
 ---
 
-[![wireframe diagram](img/svg_png/wireframe.svg)](img/pdf/wireframe.pdf)
+[![wireframe diagram](img/svg-png/wireframe.svg)](img/pdf/wireframe.pdf)
