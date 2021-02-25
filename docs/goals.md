@@ -1,7 +1,7 @@
 ---
 title: Stretch Goals
 description: Long term goals and features to implement in the future
-menu: Future Implementation Goals
+menu: Goals
 order: 70
 ---
 
