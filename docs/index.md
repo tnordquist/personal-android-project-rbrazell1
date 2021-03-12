@@ -25,4 +25,10 @@ will be an interactive map to save new bars they are at.
 [Future Implementation Goals](../personal-android-project-rbrazell1/goals.html)<br>
 
 
-
+[comment]: <> (Wireframe	12	10.5	The wireframe rating screen requires more text annotation 
+to help under the functionality of the buttons, e.g., when the Add Bar button is clicked how will the location be added?)
+[comment]: <> (ERD	12	12	Just a style / presentation note, create a consistent look, e.g., 
+there is use of both bold and normal text for both names and attributes.)
+[comment]: <> (External or device-based services	10	7	Please update with:)
+[comment]: <> (- How the service/data source will be used by your app;)
+[comment]: <> (- Will your app be able to function without full-time access to this service/data source?)
