@@ -24,8 +24,3 @@ will be an interactive map to save new bars they are at.
 
 [Future Implementation Goals](../personal-android-project-rbrazell1/goals.html)<br>
 
-
-[
-[comment]: <> (External or device-based services	10	7	Please update with:)
-[comment]: <> (- How the service/data source will be used by your app;)
-[comment]: <> (- Will your app be able to function without full-time access to this service/data source?)
