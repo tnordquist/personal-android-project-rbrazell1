@@ -1,3 +1,4 @@
 <resources>
   <string name="app_name">Sip &amp; Score</string>
+  <string name="login_failure">Login Failed</string>
 </resources>
