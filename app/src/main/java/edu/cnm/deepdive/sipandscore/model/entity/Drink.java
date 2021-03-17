@@ -14,7 +14,7 @@ public class Drink {
   private long id;
 
   @NonNull
-  @ColumnInfo(name = "drink_name",index = true)
+  @ColumnInfo(name = "drink_name", index = true)
   private String name;
 
   private String imgUrl;

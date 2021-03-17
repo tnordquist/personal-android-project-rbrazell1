@@ -1,7 +1,5 @@
 ---
-title: App functionality
-description: Overview of the intended functions of the app
-menu: Functions
+title: App functionality description: Overview of the intended functions of the app menu: Functions
 order: 20
 ---
 
@@ -27,7 +25,7 @@ order: 20
   <li>"Add Bar Button" Will take them to the interactive map to add their current location
 to automatically tag pictures.</li><br>
 
-  <li>"Add Drink Button" Will take them to the Camera and then the rating page.</li><br>
+  <li>"Add Drink Button" Will take them to the Camera and then the drinkRating page.</li><br>
 
 </ol>
 
@@ -49,7 +47,7 @@ to automatically tag pictures.</li><br>
 
 <ul>
     <li>After confirming they are satisfied with the picture, or
-        skipping the option to take a picture, they will be on the rating page</li>
+        skipping the option to take a picture, they will be on the drinkRating page</li>
 </ul>
 
   <li>To rate the drink in 1-5 stars</li>

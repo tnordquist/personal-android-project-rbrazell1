@@ -1,7 +1,5 @@
 ---
-title: Persistent data
-description: Persistent data to be stored on the device
-menu: Persistent Data
+title: Persistent data description: Persistent data to be stored on the device menu: Persistent Data
 order: 40
 ---
 
@@ -9,8 +7,8 @@ order: 40
 
 <ul>
 
-  <li>The names and addresses and phone numbers of all the bars they have drink ratings for</li>
+  <li>The names and addresses and phone numbers of all the bars they have drink drinkRatings for</li>
   <li>All the pictures of drinks they have rated</li>
-  <li>All the ratings and comments of drinks they have rated</li>
+  <li>All the drinkRatings and comments of drinks they have rated</li>
 
 </ul>

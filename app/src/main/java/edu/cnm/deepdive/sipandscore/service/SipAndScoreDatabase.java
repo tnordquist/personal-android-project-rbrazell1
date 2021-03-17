@@ -6,13 +6,13 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import edu.cnm.deepdive.sipandscore.model.dao.BarDao;
 import edu.cnm.deepdive.sipandscore.model.dao.DrinkDao;
-import edu.cnm.deepdive.sipandscore.model.dao.RatingDao;
+import edu.cnm.deepdive.sipandscore.model.dao.DrinkRatingDao;
 import edu.cnm.deepdive.sipandscore.model.entity.Bar;
 import edu.cnm.deepdive.sipandscore.model.entity.Drink;
-import edu.cnm.deepdive.sipandscore.model.entity.Rating;
+import edu.cnm.deepdive.sipandscore.model.entity.DrinkRating;
 
 @Database(
-    entities = {Bar.class, Drink.class, Rating.class},
+    entities = {Bar.class, Drink.class, DrinkRating.class},
     version = 1
 )
 public abstract class SipAndScoreDatabase extends RoomDatabase {
@@ -22,21 +22,21 @@ public abstract class SipAndScoreDatabase extends RoomDatabase {
   private static Application context;
 
   public static SipAndScoreDatabase getInstance() {
-    return InstanceHolder.INSTANCE ;
+    return InstanceHolder.INSTANCE;
   }
 
   public abstract DrinkDao getDrinkDao();
 
   public abstract BarDao getBarDao();
 
-  public abstract RatingDao getRatingDao();
+  public abstract DrinkRatingDao getRatingDao();
 
   private static class InstanceHolder {
 
-  private static final SipAndScoreDatabase INSTANCE =
-      Room.databaseBuilder(context, SipAndScoreDatabase.class,
-          DB_NAME)
-      .build();
+    private static final SipAndScoreDatabase INSTANCE =
+        Room.databaseBuilder(context, SipAndScoreDatabase.class,
+            DB_NAME)
+            .build();
   }
 
 

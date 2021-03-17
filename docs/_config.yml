@@ -14,7 +14,7 @@ author:
   name: "Russell Brazell"
   email: brazellrussell@gmail.com
 
-# Do not change the following line.
+  # Do not change the following line.
   copyright: true
 
 theme: jekyll-theme-architect

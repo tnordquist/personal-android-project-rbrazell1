@@ -3,12 +3,11 @@ package edu.cnm.deepdive.sipandscore.service;
 import android.content.Context;
 import edu.cnm.deepdive.sipandscore.model.dao.BarDao;
 import edu.cnm.deepdive.sipandscore.model.dao.DrinkDao;
-import edu.cnm.deepdive.sipandscore.model.dao.RatingDao;
+import edu.cnm.deepdive.sipandscore.model.dao.DrinkRatingDao;
 import edu.cnm.deepdive.sipandscore.model.entity.Bar;
-import edu.cnm.deepdive.sipandscore.model.pojo.DrinkFromBars;
+import edu.cnm.deepdive.sipandscore.model.entity.DrinkRating;
 import io.reactivex.Single;
 import io.reactivex.schedulers.Schedulers;
-import java.util.Iterator;
 
 public class DrinkRepository {
 
@@ -16,7 +15,7 @@ public class DrinkRepository {
 
   private final DrinkDao drinkDao;
 
-  private final RatingDao ratingDao;
+  private final DrinkRatingDao drinkRatingDao;
 
   private final BarDao barDao;
 
@@ -24,28 +23,28 @@ public class DrinkRepository {
     this.context = context;
     SipAndScoreDatabase database = SipAndScoreDatabase.getInstance();
     drinkDao = database.getDrinkDao();
-    ratingDao = database.getRatingDao();
+    drinkRatingDao = database.getRatingDao();
     barDao = database.getBarDao();
   }
 
-  public Single<DrinkFromBars> save(DrinkFromBars drink) {
-    if (drink.getId() > 0) {
+  public Single<DrinkRating> save(DrinkRating drinkRating) {
+    if (drinkRating.getId() > 0) {
       return drinkDao
-          .update(drink)
-          .map((ignored) -> drink)
+          .update(drinkRating)
+          .map((ignored) -> drinkRating)
           .subscribeOn(Schedulers.io());
     } else {
       return drinkDao
-          .insert(drink)
+          .insert(drinkRating)
           .flatMap((drinkId) -> {
-            drink.setId(drinkId);
-            for (Bar bar : drink.getBarList()) {
+            drinkRating.setId(drinkId);
+            for (Bar bar : drinkRating.getBarList()) {
               bar.setId(drinkId);
             }
-            return barDao.insert(drink.getBarList());
+            return barDao.insert(drinkRating.getBarList());
           })
           .map((barIds) -> {
-            Iterable<Long> idIterator = barIds.();
+            Iterable<Long> idIterator = barIds. ();
 
           })
     }

@@ -19,10 +19,10 @@ import androidx.room.PrimaryKey;
         )
     }
 )
-public class Rating {
+public class DrinkRating {
 
   @PrimaryKey(autoGenerate = true)
-  @ColumnInfo(name = "rating_id")
+  @ColumnInfo(name = "drink_rating_id")
   private long id;
 
   @ColumnInfo(name = "star_rating")

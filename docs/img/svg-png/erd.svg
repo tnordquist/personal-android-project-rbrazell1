@@ -1,3 +1,380 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="911px" height="371px" viewBox="-0.5 -0.5 911 371" content="&lt;mxfile host=&quot;app.diagrams.net&quot; modified=&quot;2021-03-16T00:00:42.306Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36&quot; version=&quot;14.4.8&quot; etag=&quot;TatTy0h-Z_HavE-HJ2G6&quot; type=&quot;device&quot;&gt;&lt;diagram id=&quot;HgIVYC8EPNToQH-5Cgm4&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;"><defs><clipPath id="mx-clip-10-120-30-30-0"><rect x="10" y="120" width="30" height="30"/></clipPath><clipPath id="mx-clip-46-120-144-30-0"><rect x="46" y="120" width="144" height="30"/></clipPath><clipPath id="mx-clip-10-150-30-30-0"><rect x="10" y="150" width="30" height="30"/></clipPath><clipPath id="mx-clip-46-150-144-30-0"><rect x="46" y="150" width="144" height="30"/></clipPath><clipPath id="mx-clip-46-180-144-20-0"><rect x="46" y="180" width="144" height="20"/></clipPath><clipPath id="mx-clip-720-100-30-30-0"><rect x="720" y="100" width="30" height="30"/></clipPath><clipPath id="mx-clip-756-100-144-30-0"><rect x="756" y="100" width="144" height="30"/></clipPath><clipPath id="mx-clip-756-130-144-30-0"><rect x="756" y="130" width="144" height="30"/></clipPath><clipPath id="mx-clip-756-160-144-30-0"><rect x="756" y="160" width="144" height="30"/></clipPath><clipPath id="mx-clip-756-190-144-20-0"><rect x="756" y="190" width="144" height="20"/></clipPath><clipPath id="mx-clip-384-45-152-30-0"><rect x="384" y="45" width="152" height="30"/></clipPath><clipPath id="mx-clip-384-75-152-30-0"><rect x="384" y="75" width="152" height="30"/></clipPath><clipPath id="mx-clip-370-200-30-30-0"><rect x="370" y="200" width="30" height="30"/></clipPath><clipPath id="mx-clip-406-200-144-30-0"><rect x="406" y="200" width="144" height="30"/></clipPath><clipPath id="mx-clip-370-230-30-30-0"><rect x="370" y="230" width="30" height="30"/></clipPath><clipPath id="mx-clip-406-230-144-30-0"><rect x="406" y="230" width="144" height="30"/></clipPath><clipPath id="mx-clip-370-260-30-30-0"><rect x="370" y="260" width="30" height="30"/></clipPath><clipPath id="mx-clip-406-260-144-30-0"><rect x="406" y="260" width="144" height="30"/></clipPath><clipPath id="mx-clip-406-290-144-30-0"><rect x="406" y="290" width="144" height="30"/></clipPath><clipPath id="mx-clip-406-320-144-30-0"><rect x="406" y="320" width="144" height="30"/></clipPath><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);&#xa;</style></defs><g><path d="M 10 120 L 10 90 L 190 90 L 190 120" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/><path d="M 10 120 L 10 220 L 190 220 L 190 120" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 10 120 L 190 120" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 40 120 L 40 220" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="12px"><text x="99.5" y="109.5">Drink</text></g><path d="M 10 120 M 190 120 M 190 150 L 10 150" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 10 120 M 40 120 M 40 150 M 10 150" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" font-weight="bold" pointer-events="none" clip-path="url(#mx-clip-10-120-30-30-0)" text-anchor="middle" font-size="12px"><text x="24.5" y="139.5">PK</text></g><path d="M 40 120 M 190 120 M 190 150 M 40 150" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" font-weight="bold" text-decoration="underline" pointer-events="none" clip-path="url(#mx-clip-46-120-144-30-0)" font-size="12px"><text x="47.5" y="139.5">drink_id: long</text></g><path d="M 10 150 M 190 150 M 190 180 M 10 180" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 10 150 M 40 150 M 40 180 M 10 180" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" font-weight="bold" pointer-events="none" clip-path="url(#mx-clip-10-150-30-30-0)" text-anchor="middle" font-size="12px"><text x="24.5" y="169.5">IDX</text></g><path d="M 40 150 M 190 150 M 190 180 M 40 180" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-46-150-144-30-0)" font-size="12px"><text x="47.5" y="169.5">name: String</text></g><path d="M 10 180 M 190 180 M 190 200 M 10 200" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 10 180 M 40 180 M 40 200 M 10 200" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 40 180 M 190 180 M 190 200 M 40 200" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-46-180-144-20-0)" font-size="12px"><text x="47.5" y="194.5">img_url: String (N)</text></g><path d="M 10 200 M 190 200 M 190 220 M 10 220" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 10 200 M 40 200 M 40 220 M 10 220" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 40 200 M 190 200 M 190 220 M 40 220" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 720 100 L 720 70 L 900 70 L 900 100" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 720 100 L 720 240 L 900 240 L 900 100" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 720 100 L 900 100" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 750 100 L 750 240" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="12px"><text x="809.5" y="89.5">Bar</text></g><path d="M 720 100 M 900 100 M 900 130 L 720 130" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 720 100 M 750 100 M 750 130 M 720 130" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" font-weight="bold" pointer-events="none" clip-path="url(#mx-clip-720-100-30-30-0)" text-anchor="middle" font-size="12px"><text x="734.5" y="119.5">PK</text></g><path d="M 750 100 M 900 100 M 900 130 M 750 130" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" font-weight="bold" text-decoration="underline" pointer-events="none" clip-path="url(#mx-clip-756-100-144-30-0)" font-size="12px"><text x="757.5" y="119.5">bar_id: long</text></g><path d="M 720 130 M 900 130 M 900 160 M 720 160" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 720 130 M 750 130 M 750 160 M 720 160" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 750 130 M 900 130 M 900 160 M 750 160" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-756-130-144-30-0)" font-size="12px"><text x="757.5" y="149.5">name: String</text></g><path d="M 720 160 M 900 160 M 900 190 M 720 190" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 720 160 M 750 160 M 750 190 M 720 190" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 750 160 M 900 160 M 900 190 M 750 190" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-756-160-144-30-0)" font-size="12px"><text x="757.5" y="179.5">address: String (N)</text></g><path d="M 720 190 M 900 190 M 900 210 M 720 210" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 720 190 M 750 190 M 750 210 M 720 210" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 750 190 M 900 190 M 900 210 M 750 210" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-756-190-144-20-0)" font-size="12px"><text x="757.5" y="204.5">phone_number: String (N)</text></g><path d="M 720 210 M 900 210 M 900 240 M 720 240" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 720 210 M 750 210 M 750 240 M 720 240" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 750 210 M 900 210 M 900 240 M 750 240" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 190 165 L 210 165 Q 220 165 228.32 170.55 L 331.68 239.45 Q 340 245 350 245 L 370 245" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><path d="M 195 160 L 195 170 M 200 160 L 200 170" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="355" cy="245" rx="3" ry="3" fill="#ffffff" stroke="#000000" stroke-width="3" pointer-events="none"/><path d="M 370 240 L 360 245 L 370 250" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 203px; margin-left: 280px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; background-color: #ffffff; white-space: nowrap; "><font style="font-size: 13px">Many ratings can be tied <br style="font-size: 13px" />to a single type of drink</font></div></div></div></foreignObject><text x="280" y="207" fill="#000000" font-family="Helvetica" font-size="13px" text-anchor="middle">Many ratings can be tied...</text></switch></g><path d="M 380 40 L 380 10 L 540 10 L 540 40" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 380 40 L 380 100 L 540 100 L 540 40" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 380 40 L 540 40" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="12px"><text x="459.5" y="29.5">DrinkBar</text></g><g fill="#000000" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-384-45-152-30-0)" font-size="12px"><text x="385.5" y="57.5">PK, FK1 drink_id: long</text></g><g fill="#000000" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-384-75-152-30-0)" font-size="12px"><text x="385.5" y="87.5">PK,FK2 bar_id: long</text></g><path d="M 189.64 147.69 L 209.64 147.69 Q 219.64 147.69 227.79 141.9 L 341.85 60.79 Q 350 55 360 55 L 380 55" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><path d="M 194.64 142.69 L 194.64 152.69 M 199.64 142.69 L 199.64 152.69" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="365" cy="55" rx="3" ry="3" fill="#ffffff" stroke="#000000" stroke-width="3" pointer-events="none"/><path d="M 380 50 L 370 55 L 380 60" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 103px; margin-left: 281px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; background-color: #ffffff; white-space: nowrap; "><font style="font-size: 13px">One drink can be<br /> saved for many bars<br /> to help compare where<br /> they are the best</font></div></div></div></foreignObject><text x="281" y="106" fill="#000000" font-family="Helvetica" font-size="11px" text-anchor="middle">One drink can be...</text></switch></g><path d="M 720 145 L 700 145 Q 690 145 682 139 L 578 61 Q 570 55 560 55 L 540 55" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><path d="M 715 150 L 715 140 M 710 150 L 710 140" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="555" cy="55" rx="3" ry="3" fill="#ffffff" stroke="#000000" stroke-width="3" pointer-events="none"/><path d="M 540 60 L 550 55 L 540 50" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 92px; margin-left: 622px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; background-color: #ffffff; white-space: nowrap; "><font style="font-size: 13px">One bar can have<br /> many drinks  saved to it</font></div></div></div></foreignObject><text x="622" y="95" fill="#000000" font-family="Helvetica" font-size="11px" text-anchor="middle">One bar can have...</text></switch></g><path d="M 720 200 L 700 200 Q 690 200 681.74 205.63 L 588.26 269.37 Q 580 275 570 275 L 550 275" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><path d="M 715 205 L 715 195 M 710 205 L 710 195" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="565" cy="275" rx="3" ry="3" fill="#ffffff" stroke="#000000" stroke-width="3" pointer-events="none"/><path d="M 555 270 L 555 280" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 238px; margin-left: 637px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; background-color: #ffffff; white-space: nowrap; "><font style="font-size: 13px">Each bar can have<br /> a bar specific rating</font></div></div></div></foreignObject><text x="637" y="242" fill="#000000" font-family="Helvetica" font-size="13px" text-anchor="middle">Each bar can have...</text></switch></g><path d="M 370 200 L 370 170 L 550 170 L 550 200" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 370 200 L 370 360 L 550 360 L 550 200" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 370 200 L 550 200" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 400 200 L 400 360" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="12px"><text x="459.5" y="189.5">Rating</text></g><path d="M 370 200 M 550 200 M 550 230 L 370 230" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 370 200 M 400 200 M 400 230 M 370 230" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" font-weight="bold" pointer-events="none" clip-path="url(#mx-clip-370-200-30-30-0)" text-anchor="middle" font-size="12px"><text x="384.5" y="219.5">PK</text></g><path d="M 400 200 M 550 200 M 550 230 M 400 230" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" font-weight="bold" text-decoration="underline" pointer-events="none" clip-path="url(#mx-clip-406-200-144-30-0)" font-size="12px"><text x="407.5" y="219.5">rating_id: long</text></g><path d="M 370 230 M 550 230 M 550 260 M 370 260" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 370 230 M 400 230 M 400 260 M 370 260" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" font-weight="bold" pointer-events="none" clip-path="url(#mx-clip-370-230-30-30-0)" text-anchor="middle" font-size="12px"><text x="384.5" y="249.5">FK1</text></g><path d="M 400 230 M 550 230 M 550 260 M 400 260" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-406-230-144-30-0)" font-size="12px"><text x="407.5" y="249.5">drink_id: long</text></g><path d="M 370 260 M 550 260 M 550 290 M 370 290" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 370 260 M 400 260 M 400 290 M 370 290" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" font-weight="bold" pointer-events="none" clip-path="url(#mx-clip-370-260-30-30-0)" text-anchor="middle" font-size="12px"><text x="384.5" y="279.5">FK2</text></g><path d="M 400 260 M 550 260 M 550 290 M 400 290" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-406-260-144-30-0)" font-size="12px"><text x="407.5" y="279.5">bar_id: long (N)</text></g><path d="M 370 290 M 550 290 M 550 320 M 370 320" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 370 290 M 400 290 M 400 320 M 370 320" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 400 290 M 550 290 M 550 320 M 400 320" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-406-290-144-30-0)" font-size="12px"><text x="407.5" y="309.5">starts: int (N)</text></g><path d="M 370 320 M 550 320 M 550 350 M 370 350" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 370 320 M 400 320 M 400 350 M 370 350" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 400 320 M 550 320 M 550 350 M 400 350" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g fill="#000000" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-406-320-144-30-0)" font-size="12px"><text x="407.5" y="339.5">comment: String (N)</text></g></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/><a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Viewer does not support full SVG 1.1</text></a></switch></svg>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" content="&lt;mxfile host=&quot;app.diagrams.net&quot; modified=&quot;2021-03-17T21:39:07.284Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36&quot; version=&quot;14.4.8&quot; etag=&quot;OtZMkwPQu8_cTp7Gusjw&quot; type=&quot;device&quot;&gt;&lt;diagram id=&quot;gA8V6TpSwC7p4SHVcSmN&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;" height="281px"
+  version="1.1" viewBox="-0.5 -0.5 1021 281" width="1021px"
+  xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="mx-clip-10-40-30-30-0">
+      <rect height="30" width="30" x="10" y="40"/>
+    </clipPath>
+    <clipPath id="mx-clip-46-40-144-30-0">
+      <rect height="30" width="144" x="46" y="40"/>
+    </clipPath>
+    <clipPath id="mx-clip-10-70-30-30-0">
+      <rect height="30" width="30" x="10" y="70"/>
+    </clipPath>
+    <clipPath id="mx-clip-46-70-144-30-0">
+      <rect height="30" width="144" x="46" y="70"/>
+    </clipPath>
+    <clipPath id="mx-clip-46-100-144-20-0">
+      <rect height="20" width="144" x="46" y="100"/>
+    </clipPath>
+    <clipPath id="mx-clip-830-40-30-30-0">
+      <rect height="30" width="30" x="830" y="40"/>
+    </clipPath>
+    <clipPath id="mx-clip-866-40-144-30-0">
+      <rect height="30" width="144" x="866" y="40"/>
+    </clipPath>
+    <clipPath id="mx-clip-830-70-30-30-0">
+      <rect height="30" width="30" x="830" y="70"/>
+    </clipPath>
+    <clipPath id="mx-clip-866-70-144-30-0">
+      <rect height="30" width="144" x="866" y="70"/>
+    </clipPath>
+    <clipPath id="mx-clip-866-100-144-30-0">
+      <rect height="30" width="144" x="866" y="100"/>
+    </clipPath>
+    <clipPath id="mx-clip-866-130-144-20-0">
+      <rect height="20" width="144" x="866" y="130"/>
+    </clipPath>
+    <clipPath id="mx-clip-866-150-144-30-0">
+      <rect height="30" width="144" x="866" y="150"/>
+    </clipPath>
+    <clipPath id="mx-clip-866-180-144-30-0">
+      <rect height="30" width="144" x="866" y="180"/>
+    </clipPath>
+    <clipPath id="mx-clip-866-210-144-30-0">
+      <rect height="30" width="144" x="866" y="210"/>
+    </clipPath>
+    <clipPath id="mx-clip-866-240-144-30-0">
+      <rect height="30" width="144" x="866" y="240"/>
+    </clipPath>
+    <clipPath id="mx-clip-420-40-30-30-0">
+      <rect height="30" width="30" x="420" y="40"/>
+    </clipPath>
+    <clipPath id="mx-clip-456-40-144-30-0">
+      <rect height="30" width="144" x="456" y="40"/>
+    </clipPath>
+    <clipPath id="mx-clip-420-70-30-30-0">
+      <rect height="30" width="30" x="420" y="70"/>
+    </clipPath>
+    <clipPath id="mx-clip-456-70-144-30-0">
+      <rect height="30" width="144" x="456" y="70"/>
+    </clipPath>
+    <clipPath id="mx-clip-420-100-30-30-0">
+      <rect height="30" width="30" x="420" y="100"/>
+    </clipPath>
+    <clipPath id="mx-clip-456-100-144-30-0">
+      <rect height="30" width="144" x="456" y="100"/>
+    </clipPath>
+    <clipPath id="mx-clip-456-130-144-30-0">
+      <rect height="30" width="144" x="456" y="130"/>
+    </clipPath>
+    <clipPath id="mx-clip-456-160-144-30-0">
+      <rect height="30" width="144" x="456" y="160"/>
+    </clipPath>
+    <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);&#xa;</style>
+  </defs>
+  <g>
+    <ellipse cx="405" cy="55" fill="#ffffff" pointer-events="none" rx="3" ry="3" stroke="#000000"
+      stroke-width="3"/>
+    <ellipse cx="815" cy="55" fill="#ffffff" pointer-events="none" rx="3" ry="3" stroke="#000000"
+      stroke-width="3"/>
+    <ellipse cx="615" cy="55" fill="#ffffff" pointer-events="none" rx="3" ry="3" stroke="#000000"
+      stroke-width="3"/>
+    <g fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold"
+      pointer-events="none" text-anchor="middle">
+      <text x="99.5" y="29.5">Drink</text>
+    </g>
+    <g clip-path="url(#mx-clip-10-40-30-30-0)" fill="#000000" font-family="Helvetica" font-size="12px"
+      font-weight="bold" pointer-events="none" text-anchor="middle">
+      <text x="24.5" y="59.5">PK</text>
+    </g>
+    <g clip-path="url(#mx-clip-46-40-144-30-0)" fill="#000000" font-family="Helvetica" font-size="12px"
+      font-weight="bold" pointer-events="none" text-decoration="underline">
+      <text x="47.5" y="59.5">drink_id: long</text>
+    </g>
+    <g clip-path="url(#mx-clip-10-70-30-30-0)" fill="#000000" font-family="Helvetica" font-size="12px"
+      font-weight="bold" pointer-events="none" text-anchor="middle">
+      <text x="24.5" y="89.5">IDX</text>
+    </g>
+    <g clip-path="url(#mx-clip-46-70-144-30-0)" fill="#000000" font-family="Helvetica"
+      font-size="12px" pointer-events="none">
+      <text x="47.5" y="89.5">name: String</text>
+    </g>
+    <g clip-path="url(#mx-clip-46-100-144-20-0)" fill="#000000" font-family="Helvetica"
+      font-size="12px" pointer-events="none">
+      <text x="47.5" y="114.5">img_url: String (N)</text>
+    </g>
+    <g fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold"
+      pointer-events="none" text-anchor="middle">
+      <text x="919.5" y="29.5">Bar</text>
+    </g>
+    <g clip-path="url(#mx-clip-830-40-30-30-0)" fill="#000000" font-family="Helvetica" font-size="12px"
+      font-weight="bold" pointer-events="none" text-anchor="middle">
+      <text x="844.5" y="59.5">PK</text>
+    </g>
+    <g clip-path="url(#mx-clip-866-40-144-30-0)" fill="#000000" font-family="Helvetica" font-size="12px"
+      font-weight="bold" pointer-events="none" text-decoration="underline">
+      <text x="867.5" y="59.5">bar_id: long</text>
+    </g>
+    <g clip-path="url(#mx-clip-830-70-30-30-0)" fill="#000000" font-family="Helvetica" font-size="12px"
+      font-weight="bold" pointer-events="none" text-anchor="middle">
+      <text x="844.5" y="89.5">FK1</text>
+    </g>
+    <g clip-path="url(#mx-clip-866-70-144-30-0)" fill="#000000" font-family="Helvetica"
+      font-size="12px" pointer-events="none">
+      <text x="867.5" y="89.5">drink_rating_id: long</text>
+    </g>
+    <g clip-path="url(#mx-clip-866-100-144-30-0)" fill="#000000" font-family="Helvetica"
+      font-size="12px" pointer-events="none">
+      <text x="867.5" y="119.5">address: String (N)</text>
+    </g>
+    <g clip-path="url(#mx-clip-866-130-144-20-0)" fill="#000000" font-family="Helvetica"
+      font-size="12px" pointer-events="none">
+      <text x="867.5" y="144.5">phone_number: String (N)</text>
+    </g>
+    <g clip-path="url(#mx-clip-866-150-144-30-0)" fill="#000000" font-family="Helvetica"
+      font-size="12px" pointer-events="none">
+      <text x="867.5" y="169.5">stars: int (N)</text>
+    </g>
+    <g clip-path="url(#mx-clip-866-180-144-30-0)" fill="#000000" font-family="Helvetica"
+      font-size="12px" pointer-events="none">
+      <text x="867.5" y="199.5">comment: String (N)</text>
+    </g>
+    <g clip-path="url(#mx-clip-866-210-144-30-0)" fill="#000000" font-family="Helvetica"
+      font-size="12px" pointer-events="none">
+      <text x="867.5" y="229.5">img_url: String (N)</text>
+    </g>
+    <g clip-path="url(#mx-clip-866-240-144-30-0)" fill="#000000" font-family="Helvetica"
+      font-size="12px" pointer-events="none">
+      <text x="867.5" y="259.5">name: String</text>
+    </g>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject style="overflow: visible; text-align: left;" height="100%"
+          pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+          width="100%">
+          <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 58px; margin-left: 303px;"
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div
+                style="display: inline-block; font-size: 13px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; background-color: #ffffff; white-space: nowrap; ">
+                <font style="font-size: 13px">Many drinkRatings can be tied<br
+                  style="font-size: 13px"/>to a single type of drink
+                </font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="13px" text-anchor="middle" x="303"
+          y="61">Many drinkRatings can be tied...
+        </text>
+      </switch>
+    </g>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject style="overflow: visible; text-align: left;" height="100%"
+          pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+          width="100%">
+          <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 57px; margin-left: 718px;"
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div
+                style="display: inline-block; font-size: 13px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; background-color: #ffffff; white-space: nowrap; ">
+                <font style="font-size: 13px">Each bar can have<br/> a bar specific drinkRating
+                </font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="13px" text-anchor="middle" x="718"
+          y="60">Each bar can have...
+        </text>
+      </switch>
+    </g>
+    <g fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold"
+      pointer-events="none" text-anchor="middle">
+      <text x="509.5" y="29.5">DrinkRating</text>
+    </g>
+    <g clip-path="url(#mx-clip-420-40-30-30-0)" fill="#000000" font-family="Helvetica" font-size="12px"
+      font-weight="bold" pointer-events="none" text-anchor="middle">
+      <text x="434.5" y="59.5">PK</text>
+    </g>
+    <g clip-path="url(#mx-clip-456-40-144-30-0)" fill="#000000" font-family="Helvetica" font-size="12px"
+      font-weight="bold" pointer-events="none" text-decoration="underline">
+      <text x="457.5" y="59.5">drink_rating_id: long</text>
+    </g>
+    <g clip-path="url(#mx-clip-420-70-30-30-0)" fill="#000000" font-family="Helvetica" font-size="12px"
+      font-weight="bold" pointer-events="none" text-anchor="middle">
+      <text x="434.5" y="89.5">FK1</text>
+    </g>
+    <g clip-path="url(#mx-clip-456-70-144-30-0)" fill="#000000" font-family="Helvetica"
+      font-size="12px" pointer-events="none">
+      <text x="457.5" y="89.5">drink_id: long</text>
+    </g>
+    <g clip-path="url(#mx-clip-420-100-30-30-0)" fill="#000000" font-family="Helvetica" font-size="12px"
+      font-weight="bold" pointer-events="none" text-anchor="middle">
+      <text x="434.5" y="119.5">FK2</text>
+    </g>
+    <g clip-path="url(#mx-clip-456-100-144-30-0)" fill="#000000" font-family="Helvetica"
+      font-size="12px" pointer-events="none">
+      <text x="457.5" y="119.5">bar_id: long (N)</text>
+    </g>
+    <g clip-path="url(#mx-clip-456-130-144-30-0)" fill="#000000" font-family="Helvetica"
+      font-size="12px" pointer-events="none">
+      <text x="457.5" y="149.5">stars: int (N)</text>
+    </g>
+    <g clip-path="url(#mx-clip-456-160-144-30-0)" fill="#000000" font-family="Helvetica"
+      font-size="12px" pointer-events="none">
+      <text x="457.5" y="179.5">comment: String (N)</text>
+    </g>
+    <path d="M 10 40 L 10 10 L 190 10 L 190 40" fill="#ffffff" pointer-events="all"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 10 40 L 10 140 L 190 140 L 190 40" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 10 40 L 190 40" fill="none" pointer-events="none" stroke="#000000"
+      stroke-miterlimit="10"/>
+    <path d="M 40 40 L 40 140" fill="none" pointer-events="none" stroke="#000000"
+      stroke-miterlimit="10"/>
+    <path d="M 10 40 M 190 40 M 190 70 L 10 70" fill="none" pointer-events="none" stroke="#000000"
+      stroke-miterlimit="10"/>
+    <path d="M 10 40 M 40 40 M 40 70 M 10 70" fill="none" pointer-events="none" stroke="#000000"
+      stroke-miterlimit="10"/>
+    <path d="M 40 40 M 190 40 M 190 70 M 40 70" fill="none" pointer-events="none" stroke="#000000"
+      stroke-miterlimit="10"/>
+    <path d="M 10 70 M 190 70 M 190 100 M 10 100" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 10 70 M 40 70 M 40 100 M 10 100" fill="none" pointer-events="none" stroke="#000000"
+      stroke-miterlimit="10"/>
+    <path d="M 40 70 M 190 70 M 190 100 M 40 100" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 10 100 M 190 100 M 190 120 M 10 120" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 10 100 M 40 100 M 40 120 M 10 120" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 40 100 M 190 100 M 190 120 M 40 120" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 10 120 M 190 120 M 190 140 M 10 140" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 10 120 M 40 120 M 40 140 M 10 140" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 40 120 M 190 120 M 190 140 M 40 140" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 40 L 830 10 L 1010 10 L 1010 40" fill="#ffffff" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 40 L 830 270 L 1010 270 L 1010 40" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 40 L 1010 40" fill="none" pointer-events="none" stroke="#000000"
+      stroke-miterlimit="10"/>
+    <path d="M 860 40 L 860 270" fill="none" pointer-events="none" stroke="#000000"
+      stroke-miterlimit="10"/>
+    <path d="M 830 40 M 1010 40 M 1010 70 L 830 70" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 40 M 860 40 M 860 70 M 830 70" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 860 40 M 1010 40 M 1010 70 M 860 70" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 70 M 1010 70 M 1010 100 M 830 100" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 70 M 860 70 M 860 100 M 830 100" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 860 70 M 1010 70 M 1010 100 M 860 100" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 100 M 1010 100 M 1010 130 M 830 130" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 100 M 860 100 M 860 130 M 830 130" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 860 100 M 1010 100 M 1010 130 M 860 130" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 130 M 1010 130 M 1010 150 M 830 150" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 130 M 860 130 M 860 150 M 830 150" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 860 130 M 1010 130 M 1010 150 M 860 150" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 150 M 1010 150 M 1010 180 M 830 180" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 150 M 860 150 M 860 180 M 830 180" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 860 150 M 1010 150 M 1010 180 M 860 180" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 180 M 1010 180 M 1010 210 M 830 210" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 180 M 860 180 M 860 210 M 830 210" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 860 180 M 1010 180 M 1010 210 M 860 210" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 210 M 1010 210 M 1010 240 M 830 240" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 210 M 860 210 M 860 240 M 830 240" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 860 210 M 1010 210 M 1010 240 M 860 240" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 240 M 1010 240 M 1010 270 M 830 270" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 830 240 M 860 240 M 860 270 M 830 270" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 860 240 M 1010 240 M 1010 270 M 860 270" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 190 55 L 210 55 Q 220 55 230 55 L 380 55 Q 390 55 400 55 L 420 55" fill="none"
+      pointer-events="none" stroke="#000000" stroke-miterlimit="10" stroke-width="3"/>
+    <path d="M 195 50 L 195 60 M 200 50 L 200 60" fill="none" pointer-events="none" stroke="#000000"
+      stroke-miterlimit="10" stroke-width="3"/>
+    <path d="M 420 50 L 410 55 L 420 60" fill="none" pointer-events="none" stroke="#000000"
+      stroke-miterlimit="10" stroke-width="3"/>
+    <path d="M 830 55 L 810 55 Q 800 55 790 55 L 640 55 Q 630 55 620 55 L 600 55" fill="none"
+      pointer-events="none" stroke="#000000" stroke-miterlimit="10" stroke-width="3"/>
+    <path d="M 825 60 L 825 50" fill="none" pointer-events="none" stroke="#000000" stroke-miterlimit="10"
+      stroke-width="3"/>
+    <path d="M 605 50 L 605 60" fill="none" pointer-events="none" stroke="#000000" stroke-miterlimit="10"
+      stroke-width="3"/>
+    <path d="M 420 40 L 420 10 L 600 10 L 600 40" fill="#ffffff" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 420 40 L 420 200 L 600 200 L 600 40" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 420 40 L 600 40" fill="none" pointer-events="none" stroke="#000000"
+      stroke-miterlimit="10"/>
+    <path d="M 450 40 L 450 200" fill="none" pointer-events="none" stroke="#000000"
+      stroke-miterlimit="10"/>
+    <path d="M 420 40 M 600 40 M 600 70 L 420 70" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 420 40 M 450 40 M 450 70 M 420 70" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 450 40 M 600 40 M 600 70 M 450 70" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 420 70 M 600 70 M 600 100 M 420 100" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 420 70 M 450 70 M 450 100 M 420 100" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 450 70 M 600 70 M 600 100 M 450 100" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 420 100 M 600 100 M 600 130 M 420 130" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 420 100 M 450 100 M 450 130 M 420 130" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 450 100 M 600 100 M 600 130 M 450 130" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 420 130 M 600 130 M 600 160 M 420 160" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 420 130 M 450 130 M 450 160 M 420 160" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 450 130 M 600 130 M 600 160 M 450 160" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 420 160 M 600 160 M 600 190 M 420 190" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 420 160 M 450 160 M 450 190 M 420 190" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+    <path d="M 450 160 M 600 160 M 600 190 M 450 190" fill="none" pointer-events="none"
+      stroke="#000000" stroke-miterlimit="10"/>
+  </g>
+  <switch>
+    <a target="_blank"
+      transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems">
+      <text font-size="10px" text-anchor="middle" x="50%" y="100%">Viewer does not support full SVG
+        1.1
+      </text>
+    </a>
+    <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+  </switch>
+</svg>
