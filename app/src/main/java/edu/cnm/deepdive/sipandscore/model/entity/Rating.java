@@ -25,6 +25,7 @@ public class Rating {
   @ColumnInfo(name = "rating_id")
   private long id;
 
+  @ColumnInfo(name = "star_rating")
   @Size(min = 0, max = 5)
   private int stars;
 

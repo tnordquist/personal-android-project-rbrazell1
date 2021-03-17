@@ -14,6 +14,7 @@ public class Bar {
   private long id;
 
   @NonNull
+  @ColumnInfo(name = "bar_name")
   private String name;
 
   private String address;
