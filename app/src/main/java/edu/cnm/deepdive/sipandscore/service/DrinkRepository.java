@@ -4,6 +4,11 @@ import android.content.Context;
 import edu.cnm.deepdive.sipandscore.model.dao.BarDao;
 import edu.cnm.deepdive.sipandscore.model.dao.DrinkDao;
 import edu.cnm.deepdive.sipandscore.model.dao.RatingDao;
+import edu.cnm.deepdive.sipandscore.model.entity.Bar;
+import edu.cnm.deepdive.sipandscore.model.pojo.DrinkFromBars;
+import io.reactivex.Single;
+import io.reactivex.schedulers.Schedulers;
+import java.util.Iterator;
 
 public class DrinkRepository {
 
@@ -22,4 +27,28 @@ public class DrinkRepository {
     ratingDao = database.getRatingDao();
     barDao = database.getBarDao();
   }
+
+  public Single<DrinkFromBars> save(DrinkFromBars drink) {
+    if (drink.getId() > 0) {
+      return drinkDao
+          .update(drink)
+          .map((ignored) -> drink)
+          .subscribeOn(Schedulers.io());
+    } else {
+      return drinkDao
+          .insert(drink)
+          .flatMap((drinkId) -> {
+            drink.setId(drinkId);
+            for (Bar bar : drink.getBarList()) {
+              bar.setId(drinkId);
+            }
+            return barDao.insert(drink.getBarList());
+          })
+          .map((barIds) -> {
+            Iterable<Long> idIterator = barIds.();
+
+          })
+    }
+  }
+
 }
