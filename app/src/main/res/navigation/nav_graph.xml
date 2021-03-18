@@ -3,26 +3,20 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:id="@+id/nav_graph"
-  app:startDestination="@id/FirstFragment">
+  app:startDestination="@id/navigation_drinks">
 
   <fragment
-    android:id="@+id/FirstFragment"
-    android:label="@string/first_fragment_label"
+    android:id="@+id/navigation_drinks"
+    android:label="@string/title_drinks"
     android:name="edu.cnm.deepdive.sipandscore.controller.DrinkFragment"
-    tools:layout="@layout/fragment_first">
+    tools:layout="@layout/fragment_drink">
 
-    <action
-      android:id="@+id/action_FirstFragment_to_SecondFragment"
-      app:destination="@id/SecondFragment"/>
   </fragment>
+
   <fragment
-    android:id="@+id/SecondFragment"
-    android:label="@string/second_fragment_label"
-    android:name="edu.cnm.deepdive.sipandscore.controller.SecondFragment"
-    tools:layout="@layout/fragment_second">
+    android:id="@+id/navigation_bars"
+    android:label="@string/title_bars"
+    android:name="edu.cnm.deepdive.sipandscore.controller.BarFragment"
+    tools:layout="@layout/fragment_bar"/>
 
-    <action
-      android:id="@+id/action_SecondFragment_to_FirstFragment"
-      app:destination="@id/FirstFragment"/>
-  </fragment>
 </navigation>

@@ -34,7 +34,8 @@ public class BarRepository {
           .map((barId) -> {
             bar.setId(barId);
             return bar;
-          });
+          })
+          .subscribeOn(Schedulers.io());
     }
   }
 
@@ -53,7 +54,7 @@ public class BarRepository {
     return barDao.sortByName();
   }
 
-  public LiveData<BarWithDrinkRatings> getBarId(long barId) {
+  public LiveData<BarWithDrinkRatings> getById(long barId) {
     return barDao.selectById(barId);
   }
 }

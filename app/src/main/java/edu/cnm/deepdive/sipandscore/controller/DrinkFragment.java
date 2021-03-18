@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 import edu.cnm.deepdive.sipandscore.R;
 
 public class DrinkFragment extends Fragment {
@@ -20,7 +19,7 @@ public class DrinkFragment extends Fragment {
       Bundle savedInstanceState
   ) {
     // Inflate the layout for this fragment
-    return inflater.inflate(R.layout.fragment_first, container, false);
+    return inflater.inflate(R.layout.fragment_drink, container, false);
   }
 
   public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
@@ -29,8 +28,8 @@ public class DrinkFragment extends Fragment {
     view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        NavHostFragment.findNavController(DrinkFragment.this)
-            .navigate(R.id.action_FirstFragment_to_SecondFragment);
+//        NavHostFragment.findNavController(DrinkFragment.this)
+//            .navigate(R.id.action_FirstFragment_to_SecondFragment);
       }
     });
   }

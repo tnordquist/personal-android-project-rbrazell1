@@ -5,6 +5,7 @@ import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+import java.util.Date;
 
 @Entity
 public class Drink {
@@ -12,6 +13,9 @@ public class Drink {
   @PrimaryKey(autoGenerate = true)
   @ColumnInfo(name = "drink_id")
   private long id;
+
+  @ColumnInfo(index = true)
+  private Date created = new Date();
 
   @NonNull
   @ColumnInfo(name = "drink_name", index = true)
@@ -25,6 +29,14 @@ public class Drink {
 
   public void setId(long id) {
     this.id = id;
+  }
+
+  public Date getCreated() {
+    return created;
+  }
+
+  public void setCreated(Date created) {
+    this.created = created;
   }
 
   public String getName() {

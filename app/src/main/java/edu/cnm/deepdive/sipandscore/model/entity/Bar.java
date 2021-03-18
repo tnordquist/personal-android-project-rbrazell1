@@ -6,6 +6,7 @@ import androidx.annotation.Size;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+import java.util.Date;
 
 @Entity
 public class Bar {
@@ -13,6 +14,9 @@ public class Bar {
   @PrimaryKey(autoGenerate = true)
   @ColumnInfo(name = "bar_id")
   private long id;
+
+  @ColumnInfo(index = true)
+  private Date created = new Date();
 
   @NonNull
   @ColumnInfo(name = "bar_name")
@@ -36,6 +40,14 @@ public class Bar {
 
   public void setId(long id) {
     this.id = id;
+  }
+
+  public Date getCreated() {
+    return created;
+  }
+
+  public void setCreated(Date created) {
+    this.created = created;
   }
 
   @NonNull

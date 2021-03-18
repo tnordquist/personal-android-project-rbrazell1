@@ -2,17 +2,23 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "12d85617c1e2f1ea573f536dfa82b59a",
+    "identityHash": "fb7a3de4ebc13577f5223eabf4061aa5",
     "entities": [
       {
         "tableName": "Bar",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`bar_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `bar_name` TEXT NOT NULL, `address` TEXT, `phoneNumber` TEXT, `comment` TEXT, `url` TEXT, `star_rating` INTEGER NOT NULL)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`bar_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `created` INTEGER, `bar_name` TEXT NOT NULL, `address` TEXT, `phoneNumber` TEXT, `comment` TEXT, `url` TEXT, `star_rating` INTEGER NOT NULL)",
         "fields": [
           {
             "fieldPath": "id",
             "columnName": "bar_id",
             "affinity": "INTEGER",
             "notNull": true
+          },
+          {
+            "fieldPath": "created",
+            "columnName": "created",
+            "affinity": "INTEGER",
+            "notNull": false
           },
           {
             "fieldPath": "name",
@@ -57,18 +63,33 @@
           ],
           "autoGenerate": true
         },
-        "indices": [],
+        "indices": [
+          {
+            "name": "index_Bar_created",
+            "unique": false,
+            "columnNames": [
+              "created"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Bar_created` ON `${TABLE_NAME}` (`created`)"
+          }
+        ],
         "foreignKeys": []
       },
       {
         "tableName": "Drink",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`drink_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `drink_name` TEXT NOT NULL, `imgUrl` TEXT)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`drink_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `created` INTEGER, `drink_name` TEXT NOT NULL, `imgUrl` TEXT)",
         "fields": [
           {
             "fieldPath": "id",
             "columnName": "drink_id",
             "affinity": "INTEGER",
             "notNull": true
+          },
+          {
+            "fieldPath": "created",
+            "columnName": "created",
+            "affinity": "INTEGER",
+            "notNull": false
           },
           {
             "fieldPath": "name",
@@ -91,6 +112,14 @@
         },
         "indices": [
           {
+            "name": "index_Drink_created",
+            "unique": false,
+            "columnNames": [
+              "created"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Drink_created` ON `${TABLE_NAME}` (`created`)"
+          },
+          {
             "name": "index_Drink_drink_name",
             "unique": false,
             "columnNames": [
@@ -103,13 +132,19 @@
       },
       {
         "tableName": "DrinkRating",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`drink_rating_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `drink_id` INTEGER NOT NULL, `bar_id` INTEGER NOT NULL, `star_rating` INTEGER NOT NULL, `comment` TEXT, FOREIGN KEY(`drink_id`) REFERENCES `Drink`(`drink_id`) ON UPDATE NO ACTION ON DELETE CASCADE , FOREIGN KEY(`bar_id`) REFERENCES `Bar`(`bar_id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`drink_rating_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `created` INTEGER, `drink_id` INTEGER NOT NULL, `bar_id` INTEGER NOT NULL, `star_rating` INTEGER NOT NULL, `comment` TEXT, FOREIGN KEY(`drink_id`) REFERENCES `Drink`(`drink_id`) ON UPDATE NO ACTION ON DELETE CASCADE , FOREIGN KEY(`bar_id`) REFERENCES `Bar`(`bar_id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
         "fields": [
           {
             "fieldPath": "id",
             "columnName": "drink_rating_id",
             "affinity": "INTEGER",
             "notNull": true
+          },
+          {
+            "fieldPath": "created",
+            "columnName": "created",
+            "affinity": "INTEGER",
+            "notNull": false
           },
           {
             "fieldPath": "drinkId",
@@ -143,6 +178,14 @@
           "autoGenerate": true
         },
         "indices": [
+          {
+            "name": "index_DrinkRating_created",
+            "unique": false,
+            "columnNames": [
+              "created"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_DrinkRating_created` ON `${TABLE_NAME}` (`created`)"
+          },
           {
             "name": "index_DrinkRating_drink_id",
             "unique": false,
@@ -189,7 +232,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '12d85617c1e2f1ea573f536dfa82b59a')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fb7a3de4ebc13577f5223eabf4061aa5')"
     ]
   }
 }

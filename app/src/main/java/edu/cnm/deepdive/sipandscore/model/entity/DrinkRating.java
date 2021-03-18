@@ -6,6 +6,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
+import java.util.Date;
 
 @Entity(
     foreignKeys = {
@@ -27,6 +28,9 @@ public class DrinkRating {
   @ColumnInfo(name = "drink_rating_id")
   private long id;
 
+  @ColumnInfo(index = true)
+  private Date created = new Date();
+
   @ColumnInfo(name = "drink_id", index = true)
   private long drinkId;
 
@@ -45,6 +49,14 @@ public class DrinkRating {
 
   public void setId(long id) {
     this.id = id;
+  }
+
+  public Date getCreated() {
+    return created;
+  }
+
+  public void setCreated(Date created) {
+    this.created = created;
   }
 
   public long getDrinkId() {
