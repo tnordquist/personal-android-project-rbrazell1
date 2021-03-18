@@ -11,11 +11,13 @@ import androidx.room.PrimaryKey;
     foreignKeys = {
         @ForeignKey(
             entity = Drink.class,
-            parentColumns = "drink_id", childColumns = "drink_id"
+            parentColumns = "drink_id", childColumns = "drink_id",
+            onDelete = ForeignKey.CASCADE
         ),
         @ForeignKey(
             entity = Bar.class,
-            parentColumns = "bar_id", childColumns = "bar_id"
+            parentColumns = "bar_id", childColumns = "bar_id",
+            onDelete = ForeignKey.CASCADE
         )
     }
 )
@@ -24,6 +26,12 @@ public class DrinkRating {
   @PrimaryKey(autoGenerate = true)
   @ColumnInfo(name = "drink_rating_id")
   private long id;
+
+  @ColumnInfo(name = "drink_id", index = true)
+  private long drinkId;
+
+  @ColumnInfo(name = "bar_id", index = true)
+  private long barId;
 
   @ColumnInfo(name = "star_rating")
   @Size(min = 0, max = 5)
@@ -37,6 +45,22 @@ public class DrinkRating {
 
   public void setId(long id) {
     this.id = id;
+  }
+
+  public long getDrinkId() {
+    return drinkId;
+  }
+
+  public void setDrinkId(long drinkId) {
+    this.drinkId = drinkId;
+  }
+
+  public long getBarId() {
+    return barId;
+  }
+
+  public void setBarId(long barId) {
+    this.barId = barId;
   }
 
   public int getStars() {

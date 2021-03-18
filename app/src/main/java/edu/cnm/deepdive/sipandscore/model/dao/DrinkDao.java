@@ -32,7 +32,7 @@ public interface DrinkDao {
   Single<Integer> delete(Drink drink);
 
   @Query("SELECT * FROM Drink ORDER BY drink_name DESC")
-  LiveData<String> sortByName(String name);
+  LiveData<List<Drink>> sortByName();
 
   @Transaction
   @Query("SELECT * FROM Drink WHERE drink_id = :drinkId")

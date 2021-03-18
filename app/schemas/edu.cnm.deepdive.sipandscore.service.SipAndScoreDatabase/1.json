@@ -1,0 +1,195 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "12d85617c1e2f1ea573f536dfa82b59a",
+    "entities": [
+      {
+        "tableName": "Bar",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`bar_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `bar_name` TEXT NOT NULL, `address` TEXT, `phoneNumber` TEXT, `comment` TEXT, `url` TEXT, `star_rating` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "bar_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "bar_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "address",
+            "columnName": "address",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "phoneNumber",
+            "columnName": "phoneNumber",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "comment",
+            "columnName": "comment",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "url",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stars",
+            "columnName": "star_rating",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "bar_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Drink",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`drink_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `drink_name` TEXT NOT NULL, `imgUrl` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "drink_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "drink_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imgUrl",
+            "columnName": "imgUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "drink_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_Drink_drink_name",
+            "unique": false,
+            "columnNames": [
+              "drink_name"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Drink_drink_name` ON `${TABLE_NAME}` (`drink_name`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "DrinkRating",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`drink_rating_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `drink_id` INTEGER NOT NULL, `bar_id` INTEGER NOT NULL, `star_rating` INTEGER NOT NULL, `comment` TEXT, FOREIGN KEY(`drink_id`) REFERENCES `Drink`(`drink_id`) ON UPDATE NO ACTION ON DELETE CASCADE , FOREIGN KEY(`bar_id`) REFERENCES `Bar`(`bar_id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "drink_rating_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "drinkId",
+            "columnName": "drink_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "barId",
+            "columnName": "bar_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "stars",
+            "columnName": "star_rating",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "comment",
+            "columnName": "comment",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "drink_rating_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_DrinkRating_drink_id",
+            "unique": false,
+            "columnNames": [
+              "drink_id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_DrinkRating_drink_id` ON `${TABLE_NAME}` (`drink_id`)"
+          },
+          {
+            "name": "index_DrinkRating_bar_id",
+            "unique": false,
+            "columnNames": [
+              "bar_id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_DrinkRating_bar_id` ON `${TABLE_NAME}` (`bar_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "Drink",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "drink_id"
+            ],
+            "referencedColumns": [
+              "drink_id"
+            ]
+          },
+          {
+            "table": "Bar",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "bar_id"
+            ],
+            "referencedColumns": [
+              "bar_id"
+            ]
+          }
+        ]
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '12d85617c1e2f1ea573f536dfa82b59a')"
+    ]
+  }
+}

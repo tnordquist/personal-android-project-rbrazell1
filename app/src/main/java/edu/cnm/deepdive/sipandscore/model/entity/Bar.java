@@ -8,15 +8,7 @@ import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
-@Entity(
-    foreignKeys = {
-        @ForeignKey(
-            entity = DrinkRating.class,
-            parentColumns = "drink_rating_id",
-            childColumns = "drink_rating_id"
-        )
-    }
-)
+@Entity
 public class Bar {
 
   @PrimaryKey(autoGenerate = true)

@@ -29,24 +29,17 @@ public class DrinkRepository {
 
   public Single<DrinkRating> save(DrinkRating drinkRating) {
     if (drinkRating.getId() > 0) {
-      return drinkDao
+      return drinkRatingDao
           .update(drinkRating)
           .map((ignored) -> drinkRating)
           .subscribeOn(Schedulers.io());
     } else {
-      return drinkDao
+      return drinkRatingDao
           .insert(drinkRating)
-          .flatMap((drinkId) -> {
-            drinkRating.setId(drinkId);
-            for (Bar bar : drinkRating.getBarList()) {
-              bar.setId(drinkId);
-            }
-            return barDao.insert(drinkRating.getBarList());
-          })
-          .map((barIds) -> {
-            Iterable<Long> idIterator = barIds. ();
-
-          })
+          .map((drinkRatingId) -> {
+            drinkRating.setId(drinkRatingId);
+            return drinkRating;
+          });
     }
   }
 

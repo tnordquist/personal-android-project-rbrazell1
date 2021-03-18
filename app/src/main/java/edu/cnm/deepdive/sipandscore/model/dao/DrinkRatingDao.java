@@ -32,10 +32,10 @@ public interface DrinkRatingDao {
   Single<Integer> delete(DrinkRating drinkRating);
 
   @Query("SELECT * FROM DrinkRating ORDER BY star_rating DESC")
-  LiveData<Integer> sortByStars(int stars);
+  LiveData<List<DrinkRating>> sortByStars();
 
   @Transaction
-  @Query("SELECT * FROM Bar WHERE drink_rating_id = :drinkRatingId")
-  LiveData<Bar> selectById(long drinkRatingId);
+  @Query("SELECT * FROM DrinkRating WHERE drink_rating_id = :drinkRatingId")
+  LiveData<DrinkRating> selectById(long drinkRatingId);
 
 }

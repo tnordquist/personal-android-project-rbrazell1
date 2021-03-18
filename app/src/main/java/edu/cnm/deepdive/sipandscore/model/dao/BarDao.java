@@ -8,6 +8,7 @@ import androidx.room.Query;
 import androidx.room.Transaction;
 import androidx.room.Update;
 import edu.cnm.deepdive.sipandscore.model.entity.Bar;
+import edu.cnm.deepdive.sipandscore.model.pojo.BarWithDrinkRatings;
 import io.reactivex.Single;
 import java.util.Collection;
 import java.util.List;
@@ -31,11 +32,11 @@ public interface BarDao {
   Single<Integer> delete(Bar bar);
 
   @Query("SELECT * FROM Bar ORDER BY bar_name ASC")
-  LiveData<String> sortByName(String name);
+  LiveData<List<Bar>> sortByName();
 
   @Transaction
   @Query("SELECT * FROM Bar WHERE bar_id = :barID")
-  LiveData<Bar> selectById(long barID);
+  LiveData<BarWithDrinkRatings> selectById(long barID);
 
 }
 

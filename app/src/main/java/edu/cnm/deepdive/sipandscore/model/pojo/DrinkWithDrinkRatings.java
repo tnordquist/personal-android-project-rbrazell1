@@ -1,19 +1,18 @@
 package edu.cnm.deepdive.sipandscore.model.pojo;
 
 import androidx.room.Relation;
-import edu.cnm.deepdive.sipandscore.model.entity.Bar;
+import edu.cnm.deepdive.sipandscore.model.entity.Drink;
 import edu.cnm.deepdive.sipandscore.model.entity.DrinkRating;
-import java.util.LinkedList;
 import java.util.List;
 
-public class BarWithDrinkRatings extends Bar {
+public class DrinkWithDrinkRatings extends Drink {
 
   @Relation(
       entity = DrinkRating.class,
-      parentColumn = "bar_id",
-      entityColumn = "bar_id"
+      parentColumn = "drink_id",
+      entityColumn = "drink_id"
   )
-  private List<DrinkRatingWithDetails> drinkRatings = new LinkedList<>();
+  private List<DrinkRatingWithDetails> drinkRatings;
 
   public List<DrinkRatingWithDetails> getDrinkRatings() {
     return drinkRatings;
