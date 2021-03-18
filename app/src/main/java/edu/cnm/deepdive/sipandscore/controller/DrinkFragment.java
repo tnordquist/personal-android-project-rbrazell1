@@ -10,7 +10,9 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 import edu.cnm.deepdive.sipandscore.R;
 
-public class FirstFragment extends Fragment {
+public class DrinkFragment extends Fragment {
+
+
 
   @Override
   public View onCreateView(
@@ -27,7 +29,7 @@ public class FirstFragment extends Fragment {
     view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        NavHostFragment.findNavController(FirstFragment.this)
+        NavHostFragment.findNavController(DrinkFragment.this)
             .navigate(R.id.action_FirstFragment_to_SecondFragment);
       }
     });

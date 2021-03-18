@@ -8,7 +8,7 @@
   <fragment
     android:id="@+id/FirstFragment"
     android:label="@string/first_fragment_label"
-    android:name="edu.cnm.deepdive.sipandscore.controller.FirstFragment"
+    android:name="edu.cnm.deepdive.sipandscore.controller.DrinkFragment"
     tools:layout="@layout/fragment_first">
 
     <action
