@@ -31,6 +31,10 @@ public abstract class SipAndScoreDatabase extends RoomDatabase {
 
   public abstract DrinkRatingDao getRatingDao();
 
+  public static void setContext(Application context) {
+    SipAndScoreDatabase.context = context;
+  }
+
   private static class InstanceHolder {
 
     private static final SipAndScoreDatabase INSTANCE =

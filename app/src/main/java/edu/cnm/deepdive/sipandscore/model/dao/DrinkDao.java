@@ -29,7 +29,7 @@ public interface DrinkDao {
   Single<Integer> update(Drink drink);
 
   @Delete
-  Single<Integer> delete(Drink drink);
+  Single<Integer> delete(Drink... drink);
 
   @Query("SELECT * FROM Drink ORDER BY drink_name DESC")
   LiveData<List<Drink>> sortByName();
