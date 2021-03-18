@@ -16,6 +16,8 @@ There will be an interactive map to save new bars they are at.
 
 [Persistent Data to be Stored on the Device](../personal-android-project-rbrazell1/persistent-data.html)<br>
 
+[Data Model Implementation](../personal-android-project-rbrazell1/data-model-implementation.html)<br>
+
 [Entity Relationship Diagram for Persistent Data](../personal-android-project-rbrazell1/erd.html)<br>
 
 [Device and External API's](../personal-android-project-rbrazell1/api.html)<br>
