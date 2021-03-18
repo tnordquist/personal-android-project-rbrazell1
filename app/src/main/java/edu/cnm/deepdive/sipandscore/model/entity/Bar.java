@@ -5,7 +5,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Size;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
-import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
 @Entity

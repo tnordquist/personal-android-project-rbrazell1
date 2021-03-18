@@ -7,7 +7,6 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Transaction;
 import androidx.room.Update;
-import edu.cnm.deepdive.sipandscore.model.entity.Bar;
 import edu.cnm.deepdive.sipandscore.model.entity.DrinkRating;
 import io.reactivex.Single;
 import java.util.Collection;
@@ -29,7 +28,7 @@ public interface DrinkRatingDao {
   Single<Integer> update(DrinkRating drinkRating);
 
   @Delete
-  Single<Integer> delete(DrinkRating drinkRating);
+  Single<Integer> delete(DrinkRating... drinkRatings);
 
   @Query("SELECT * FROM DrinkRating ORDER BY star_rating DESC")
   LiveData<List<DrinkRating>> sortByStars();

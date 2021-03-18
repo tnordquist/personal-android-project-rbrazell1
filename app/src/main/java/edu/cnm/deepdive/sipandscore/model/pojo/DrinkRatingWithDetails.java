@@ -4,8 +4,6 @@ import androidx.room.Relation;
 import edu.cnm.deepdive.sipandscore.model.entity.Bar;
 import edu.cnm.deepdive.sipandscore.model.entity.Drink;
 import edu.cnm.deepdive.sipandscore.model.entity.DrinkRating;
-import java.util.LinkedList;
-import java.util.List;
 
 public class DrinkRatingWithDetails extends DrinkRating {
 
