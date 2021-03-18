@@ -8,8 +8,8 @@ ERD order: 50
 ## Entity Classes
 <br>
 
-[Bar](app/src/main/java/edu/cnm/deepdive/sipandscore/model/entity/Bar.java)<br>
+[Bar](https://github.com/ddc-java-12/personal-android-project-rbrazell1/blob/main/app/src/main/java/edu/cnm/deepdive/sipandscore/model/entity/Bar.java)<br>
 
-[Drink](app/src/main/java/edu/cnm/deepdive/sipandscore/model/entity/Drink.java)<br>
+[Drink](https://github.com/ddc-java-12/personal-android-project-rbrazell1/blob/main/app/src/main/java/edu/cnm/deepdive/sipandscore/model/entity/Drink.java)<br>
 
-[DrinkRating](app/src/main/java/edu/cnm/deepdive/sipandscore/model/entity/DrinkRating.java)<br>
+[DrinkRating](https://github.com/ddc-java-12/personal-android-project-rbrazell1/blob/main/app/src/main/java/edu/cnm/deepdive/sipandscore/model/entity/DrinkRating.java)<br>
