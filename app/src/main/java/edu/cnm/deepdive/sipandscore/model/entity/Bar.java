@@ -7,6 +7,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 import java.util.Date;
+import org.jetbrains.annotations.NotNull;
 
 @Entity
 public class Bar {
@@ -97,5 +98,11 @@ public class Bar {
 
   public void setStars(int stars) {
     this.stars = stars;
+  }
+
+  @NonNull
+  @Override
+  public String toString() {
+    return name;
   }
 }

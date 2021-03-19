@@ -1,10 +1,13 @@
 package edu.cnm.deepdive.sipandscore.controller;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -16,6 +19,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import edu.cnm.deepdive.sipandscore.R;
+import edu.cnm.deepdive.sipandscore.databinding.ActivityMainBinding;
 import edu.cnm.deepdive.sipandscore.service.GoogleSignInService;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,18 +31,14 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-
     BottomNavigationView navView = findViewById(R.id.nav_view);
-
     appBarConfiguration = new AppBarConfiguration.Builder(
         R.id.navigation_drinks, R.id.navigation_bars)
         .build();
-
     navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-
     NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-
     NavigationUI.setupWithNavController(navView, navController);
+
   }
 
   @Override

@@ -5,26 +5,46 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".SecondFragment">
+  tools:context=".controller.BarFragment">
+
+  <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/bar_name_layout"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/double_static_spacing"
+    app:hintEnabled="true"
+    app:hintAnimationEnabled="true"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/bar_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Name of Bar"
+      android:inputType="text"/>
+
+  </com.google.android.material.textfield.TextInputLayout>
 
   <Button
-    android:id="@+id/button_second"
+    android:id="@+id/add_bar"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="@string/previous"
-    app:layout_constraintBottom_toBottomOf="parent"
+    android:text="Add Bar"
+    android:layout_margin="@dimen/double_static_spacing"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/textview_second"
+    app:layout_constraintTop_toBottomOf="@id/bar_name_layout"
     />
 
-  <TextView
-    android:id="@+id/textview_second"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:layout_constraintBottom_toTopOf="@id/button_second"
+  <ListView
+    android:id="@+id/bar_list"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintTop_toBottomOf="@id/add_bar"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
     />
 </androidx.constraintlayout.widget.ConstraintLayout>
