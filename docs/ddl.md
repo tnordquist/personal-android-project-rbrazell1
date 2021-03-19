@@ -45,4 +45,4 @@ CREATE INDEX IF NOT EXISTS `index_DrinkRating_bar_id` ON `DrinkRating` (`bar_id`
 
 ```
 
-[DDL Sql code](docs/sql/ddl.sql)<br>
+[DDL Sql code](https://github.com/ddc-java-12/personal-android-project-rbrazell1/blob/main/docs/sql/ddl.sql)<br>
