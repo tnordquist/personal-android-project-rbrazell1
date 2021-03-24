@@ -1,5 +1,7 @@
 ---
-title: Entity Relationship Diagram description: Persistent data entity relationship diagram menu:
+title: Entity Relationship Diagram 
+description: Persistent data entity relationship diagram 
+menu:
 ERD order: 50
 ---
 

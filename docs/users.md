@@ -1,5 +1,8 @@
 ---
-title: User Stories description: Target users and corresponding user stories menu: Users order: 10
+title: User Stories 
+description: Target users and corresponding user stories 
+menu: Users 
+order: 10
 ---
 
 # Intended users

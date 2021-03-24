@@ -1,5 +1,7 @@
 ---
-title: Persistent data description: Persistent data to be stored on the device menu: Persistent Data
+title: Persistent data 
+description: Persistent data to be stored on the device 
+menu: Persistent Data
 order: 40
 ---
 

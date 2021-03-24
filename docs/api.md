@@ -1,6 +1,8 @@
 ---
-title: Device and external services description: API's for the device services integration and
-external services menu: Service API's order: 60
+title: Device and external services 
+description: API's for the device services integration and external services 
+menu: Service API's 
+order: 60
 ---
 
 ## Device/external services

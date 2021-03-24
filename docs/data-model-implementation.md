@@ -1,6 +1,8 @@
 ---
-title: Data Model Implementation description: How the DAO's work to sort and handle the database
-menu: Database order: 45
+title: Data Model Implementation 
+description: How the DAO's work to sort and handle the database
+menu: Database 
+order: 45
 ---
 
 ## Database and DAO classes
