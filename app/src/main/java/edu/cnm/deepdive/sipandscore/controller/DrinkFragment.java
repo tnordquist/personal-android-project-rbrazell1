@@ -6,12 +6,21 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import edu.cnm.deepdive.sipandscore.R;
+import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkBinding;
+import edu.cnm.deepdive.sipandscore.viewmodel.DrinkViewModel;
 
 public class DrinkFragment extends Fragment {
 
+  private FragmentDrinkBinding binding;
+  DrinkViewModel drinkViewModel;
 
+  @Override
+  public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+  }
 
   @Override
   public View onCreateView(
