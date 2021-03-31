@@ -1,0 +1,7 @@
+edu.cnm.deepdive.sipandscore
+edu.cnm.deepdive.sipandscore.controller
+edu.cnm.deepdive.sipandscore.model.dao
+edu.cnm.deepdive.sipandscore.model.entity
+edu.cnm.deepdive.sipandscore.model.pojo
+edu.cnm.deepdive.sipandscore.service
+edu.cnm.deepdive.sipandscore.viewmodel
