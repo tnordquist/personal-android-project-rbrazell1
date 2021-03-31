@@ -1,6 +1,2 @@
-# Android project proposal starter
+# Sip & Score can help you keep track of every great drink and not so great drink with just a few clicks.
 
-This is a project template for all phases&mdash;from proposal to final delivery&mdash;of the
-personal Android project in
-the [Deep Dive Coding](https://deepdivecoding.com/) [Java + Android bootcamp](https://deepdivecoding.com/java-android/)
-.
