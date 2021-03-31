@@ -11,7 +11,7 @@ public class DrinkViewModel extends AndroidViewModel{
   public DrinkViewModel drinkViewModel;
 
   public DrinkViewModel(
-      @NonNull @NotNull Application application) {
+      @NonNull Application application) {
     super(application);
   }
 }
