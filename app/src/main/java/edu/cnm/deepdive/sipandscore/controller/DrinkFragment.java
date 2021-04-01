@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import edu.cnm.deepdive.sipandscore.R;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkBinding;
@@ -31,7 +30,7 @@ public class DrinkFragment extends Fragment {
   public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
 
-    view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
+    view.findViewById(R.id.button_add_drink).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
 //        NavHostFragment.findNavController(DrinkFragment.this)

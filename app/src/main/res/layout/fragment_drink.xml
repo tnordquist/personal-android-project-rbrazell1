@@ -10,24 +10,47 @@
 
 
   <Button
-    android:id="@+id/button_first"
+    android:id="@+id/button_add_drink"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="@string/next"
+    android:padding="@dimen/static_spacing"
+    android:layout_margin="@dimen/double_static_spacing"
+    android:text="@string/add_drink"
+    app:layout_constraintTop_toBottomOf="@id/drink_recycler_view"
     app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/textview_first"
+    app:layout_constraintEnd_toStartOf="@id/button_add_bar"
     />
 
-  <TextView
-    android:id="@+id/textview_first"
+  <Button
+    android:id="@+id/button_add_bar"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="@string/hello_first_fragment"
-    app:layout_constraintBottom_toTopOf="@id/button_first"
+    android:padding="@dimen/static_spacing"
+    android:layout_margin="@dimen/double_static_spacing"
+    android:text="@string/add_bar"
+    app:layout_constraintTop_toBottomOf="@id/drink_recycler_view"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toEndOf="@id/button_add_drink"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
     />
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/drink_recycler_view"
+    android:layout_height="0dp"
+    android:layout_width="0dp"
+    android:padding="@dimen/static_spacing"
+    android:layout_marginTop="@dimen/double_static_spacing"
+    android:layout_marginBottom="@dimen/static_spacing"
+    android:layout_marginStart="@dimen/static_spacing"
+    android:layout_marginEnd="@dimen/static_spacing"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/button_add_drink"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:orientation="vertical"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

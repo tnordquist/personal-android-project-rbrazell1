@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+  <!--  Spacing-->
   <dimen name="half_static_spacing">4dp</dimen>
-  <dimen name="app_bar_height">180dp</dimen>
-  <dimen name="double_static_spacing">16dp</dimen>
   <dimen name="static_spacing">8dp</dimen>
+  <dimen name="double_static_spacing">16dp</dimen>
+
+  <!--  Item sizing-->
+  <dimen name="app_bar_height">180dp</dimen>
 </resources>
