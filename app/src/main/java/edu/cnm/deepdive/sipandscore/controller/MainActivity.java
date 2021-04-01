@@ -33,12 +33,11 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
     BottomNavigationView navView = findViewById(R.id.nav_view);
     appBarConfiguration = new AppBarConfiguration.Builder(
-        R.id.navigation_drinks, R.id.navigation_bars)
+        R.id.navigation_drinks, R.id.navigation_bars, R.id.navigation_map)
         .build();
     navController = Navigation.findNavController(this, R.id.nav_host_fragment);
     NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
     NavigationUI.setupWithNavController(navView, navController);
-
   }
 
   @Override

@@ -38,6 +38,8 @@
   <string name="bar_name_hint">Bar Name</string>
   <string name="bar_comment_hint">Bar Comment</string>
   <string name="phone_number_hint">Phone Number</string>
+  <string name="drink_card_label">Drink Rating Card</string>
+  <string name="bar_card_label">Bar Rating Card</string>
 
 
 </resources>

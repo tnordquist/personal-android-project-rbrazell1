@@ -8,19 +8,62 @@
   <fragment
     android:id="@+id/navigation_drinks"
     android:label="@string/title_drinks"
-    android:name="edu.cnm.deepdive.sipandscore.controller.DrinkFragment"
-    tools:layout="@layout/fragment_drink"/>
+    android:name="edu.cnm.deepdive.sipandscore.controller.DrinkListFragment"
+    tools:layout="@layout/fragment_drink_list">
+
+    <action
+      android:id="@+id/open_drink_details"
+      app:destination="@id/navigation_drink_rating_card">
+
+      <argument
+        android:name="drink_id"
+        app:argType="long"/>
+    </action>
+  </fragment>
 
   <fragment
     android:id="@+id/navigation_bars"
     android:label="@string/title_bars"
     android:name="edu.cnm.deepdive.sipandscore.controller.BarListFragment"
-    tools:layout="@layout/fragment_bar_list"/>
+    tools:layout="@layout/fragment_bar_list">
+
+    <action
+      android:id="@+id/open_bar_details"
+      app:destination="@id/navigation_bar_rating_card">
+
+      <argument
+        android:name="bar_id"
+        app:argType="long"/>
+    </action>
+  </fragment>
 
   <fragment
     android:id="@+id/navigation_map"
     android:label="@string/title_map"
     android:name="edu.cnm.deepdive.sipandscore.controller.BarMapFragment"
     tools:layout="@layout/activity_bar_map"/>
+
+  <dialog
+    android:id="@+id/navigation_drink_rating_card"
+    tools:label="@string/drink_card_label"
+    android:name="edu.cnm.deepdive.sipandscore.controller.DrinkDetailFragment"
+    tools:layout="@layout/fragment_drink_detail">
+
+    <argument
+      android:name="drink_id"
+      app:argType="long"/>
+
+  </dialog>
+
+  <dialog
+    android:id="@+id/navigation_bar_rating_card"
+    tools:label="@string/bar_card_label"
+    android:name="edu.cnm.deepdive.sipandscore.controller.BarDetailFragment"
+    tools:layout="@layout/fragment_bar_detail">
+
+    <argument
+      android:name="bar_id"
+      app:argType="long"/>
+  </dialog>
 
 </navigation>
