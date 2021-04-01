@@ -9,14 +9,18 @@
     android:id="@+id/navigation_drinks"
     android:label="@string/title_drinks"
     android:name="edu.cnm.deepdive.sipandscore.controller.DrinkFragment"
-    tools:layout="@layout/fragment_drink">
-
-  </fragment>
+    tools:layout="@layout/fragment_drink"/>
 
   <fragment
     android:id="@+id/navigation_bars"
     android:label="@string/title_bars"
-    android:name="edu.cnm.deepdive.sipandscore.controller.BarFragment"
-    tools:layout="@layout/fragment_bar"/>
+    android:name="edu.cnm.deepdive.sipandscore.controller.BarListFragment"
+    tools:layout="@layout/fragment_bar_list"/>
+
+  <fragment
+    android:id="@+id/navigation_map"
+    android:label="@string/title_map"
+    android:name="edu.cnm.deepdive.sipandscore.controller.BarMapFragment"
+    tools:layout="@layout/activity_bar_map"/>
 
 </navigation>

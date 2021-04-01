@@ -34,6 +34,8 @@ public interface BarDao {
   @Query("SELECT * FROM Bar ORDER BY bar_name ASC")
   LiveData<List<Bar>> sortByName();
 
+  @Query("SELECT * FROM Bar WHERE bar_name LIKE :nameFragment")
+  LiveData<List<Bar>> filterByNameFragment(String nameFragment);
   @Transaction
   @Query("SELECT * FROM Bar WHERE bar_id = :barID")
   LiveData<BarWithDrinkRatings> selectById(long barID);

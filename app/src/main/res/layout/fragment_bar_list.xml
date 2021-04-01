@@ -5,37 +5,22 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".controller.BarFragment">
-
-  <fragment
-    android:id="@+id/map"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    app:layout_constraintVertical_weight="6"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
-    tools:context=".controller.BarMapActivity"
-    android:padding="@dimen/half_static_spacing"
-    android:layout_margin="@dimen/static_spacing"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toTopOf="@id/add_bar"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toStartOf="parent"/>
+  tools:context=".controller.BarListFragment">
 
   <com.google.android.material.textfield.TextInputLayout
     android:id="@+id/bar_name_layout"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
-    app:layout_constraintVertical_weight="1"
-    app:hintEnabled="true"
+    android:layout_margin="@dimen/static_spacing"
     app:hintAnimationEnabled="true"
-    app:layout_constraintTop_toBottomOf="@id/add_bar"
-    app:layout_constraintBottom_toTopOf="@id/bar_list"
+    app:hintEnabled="true"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/search"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent">
-
+    >
 
     <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-      android:id="@+id/bar_name_searchbar"
+      android:id="@+id/bar_name"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:hint="@string/bar_SearchBar_hint"
@@ -44,24 +29,24 @@
 
   </com.google.android.material.textfield.TextInputLayout>
 
-  <Button
-    android:id="@+id/add_bar"
+  <ImageButton
+    android:id="@+id/search"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/add_bar"
-    android:padding="@dimen/static_spacing"
-    android:layout_margin="@dimen/half_static_spacing"
-    app:layout_constraintTop_toBottomOf="@id/map"
-    app:layout_constraintBottom_toTopOf="@id/bar_name_layout"
-    app:layout_constraintStart_toStartOf="parent"
+    android:layout_height="0dp"
+    android:layout_margin="@dimen/static_spacing"
+    android:scaleType="fitCenter"
+    android:adjustViewBounds="true"
+    android:src="@drawable/ic_search"
     app:layout_constraintEnd_toEndOf="parent"
-    />
+    app:layout_constraintTop_toTopOf="@id/bar_name_layout"
+    app:layout_constraintBottom_toBottomOf="@id/bar_name_layout"
+    android:contentDescription="@string/search_icon_description"/>
 
   <ListView
     android:id="@+id/bar_list"
     android:layout_width="0dp"
     android:layout_height="0dp"
-    app:layout_constraintVertical_weight="02"
+    app:layout_constraintVertical_weight="2"
     android:contextClickable="true"
     android:textFilterEnabled="true"
     app:layout_constraintTop_toBottomOf="@id/bar_name_layout"
@@ -69,4 +54,5 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
    />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

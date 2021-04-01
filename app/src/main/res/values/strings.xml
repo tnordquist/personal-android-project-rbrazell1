@@ -13,8 +13,11 @@
   <string name="title_drinks">Drinks</string>
   <string name="title_ratings">Ratings</string>
   <string name="title_bars">Bars</string>
+  <string name="title_map">Map</string>
   <string name="title_activity_main">ScrollingActivity</string>
+  <string name="title_activity_bar_map">Map</string>
   <string name="main_activity_snackbar">Replace with your own action</string>
+  <string name="title_of_image_hint">Image Title / Drink Name</string>
 
   <!-- Strings used for fragments for navigation -->
   <string name="drink_fragment_label">Drinks</string>
@@ -23,10 +26,18 @@
   <!--  Buttons-->
   <string name="add_drink">Add Drink</string>
   <string name="add_bar">Add Bar</string>
+  <string name="find_bar">Find Bar</string>
 
-  <string name="dashboard_text">This is dashboard fragment</string>
-  <string name="hello_first_fragment">Hello first fragment</string>
-  <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+  <string name="search_icon_description">Icon to start search with the text as it is currently</string>
+  <string name="address_search_button">Search for current address</string>
+
+  <!--  Hints-->
   <string name="bar_SearchBar_hint">Search My bars</string>
-  <string name="title_activity_bar_map">Map</string>
+  <string name="comment_of_image_hint">Drink Comment</string>
+  <string name="add_to_bar_hint">Add to Bar…</string>
+  <string name="bar_name_hint">Bar Name</string>
+  <string name="bar_comment_hint">Bar Comment</string>
+  <string name="phone_number_hint">Phone Number</string>
+
+
 </resources>

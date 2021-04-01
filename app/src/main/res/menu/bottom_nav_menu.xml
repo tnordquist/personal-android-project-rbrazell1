@@ -15,5 +15,8 @@
     android:id="@+id/navigation_bars"
     android:title="@string/title_bars"/>
 
+  <item
+    android:id="@+id/navigation_map"
+    android:title="@string/title_map"/>
 
 </menu>

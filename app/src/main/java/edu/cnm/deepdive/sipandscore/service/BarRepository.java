@@ -54,6 +54,11 @@ public class BarRepository {
     return barDao.sortByName();
   }
 
+  public LiveData<List<Bar>> searchByNameFragment(String nameFragment) {
+    return barDao.filterByNameFragment("%" + nameFragment + "%");
+  }
+
+
   public LiveData<BarWithDrinkRatings> getById(long barId) {
     return barDao.selectById(barId);
   }

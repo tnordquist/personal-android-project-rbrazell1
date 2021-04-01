@@ -20,6 +20,8 @@ public class BarViewModel extends AndroidViewModel implements LifecycleObserver 
   private final BarRepository barRepository;
   private final LiveData<BarWithDrinkRatings> bar;
   private final MutableLiveData<Long> barId;
+  private final MutableLiveData<String> nameFragment;
+  private final LiveData<List<Bar>> filteredBars;
   private final MutableLiveData<Throwable> throwable;
   private final CompositeDisposable pending;
 
@@ -28,6 +30,8 @@ public class BarViewModel extends AndroidViewModel implements LifecycleObserver 
     super(application);
     barRepository = new BarRepository(application);
     barId = new MutableLiveData<>();
+    nameFragment = new MutableLiveData<>();
+    filteredBars = Transformations.switchMap(nameFragment, barRepository::searchByNameFragment);
     bar = Transformations.switchMap(barId, barRepository::getById);
     throwable = new MutableLiveData<>();
     pending = new CompositeDisposable();
@@ -39,6 +43,14 @@ public class BarViewModel extends AndroidViewModel implements LifecycleObserver 
 
   public LiveData<List<Bar>> getBars() {
     return barRepository.getAllByName();
+  }
+
+  public void setNameFragment(String nameFragment) {
+    this.nameFragment.setValue(nameFragment);
+  }
+
+  public LiveData<List<Bar>> getFilteredBars() {
+    return filteredBars;
   }
 
   public LiveData<BarWithDrinkRatings> getBar() {
