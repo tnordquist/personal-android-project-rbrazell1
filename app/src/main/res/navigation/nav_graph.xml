@@ -41,7 +41,7 @@
     android:id="@+id/navigation_map"
     android:label="@string/title_map"
     android:name="edu.cnm.deepdive.sipandscore.controller.BarMapFragment"
-    tools:layout="@layout/activity_bar_map"/>
+    tools:layout="@layout/fragment_bar_map"/>
 
   <dialog
     android:id="@+id/navigation_drink_rating_card"
