@@ -10,22 +10,33 @@ import androidx.fragment.app.Fragment;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import edu.cnm.deepdive.sipandscore.databinding.FragmentBarMapBinding;
+import edu.cnm.deepdive.sipandscore.R;
+import org.jetbrains.annotations.NotNull;
 
 public class BarMapFragment extends Fragment implements OnMapReadyCallback {
 
-  private FragmentBarMapBinding binding;
+  private edu.cnm.deepdive.sipandscore.databinding.FragmentBarMapBinding binding;
 
   @Nullable
   @Override
   public View onCreateView(@NonNull LayoutInflater inflater,
       @Nullable ViewGroup container,
       @Nullable Bundle savedInstanceState) {
-    binding = FragmentBarMapBinding.inflate(inflater, container, false);
-    binding.map.getMapAsync(this);
+    binding = edu.cnm.deepdive.sipandscore.databinding.FragmentBarMapBinding
+        .inflate(inflater, container, false);
     return binding.getRoot();
+  }
+
+  @Override
+  public void onViewCreated(@NonNull @NotNull View view,
+      @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+    super.onViewCreated(view, savedInstanceState);
+    SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager()
+        .findFragmentById(R.id.map_fragment);
+    mapFragment.getMapAsync(this);
   }
 
   @Override

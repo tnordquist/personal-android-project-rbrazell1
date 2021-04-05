@@ -69,12 +69,12 @@ public class MainActivity extends AppCompatActivity {
     return handled;
   }
 
-  @Override
-  public void onRequestPermissionsResult(int requestCode,
-      @NonNull @NotNull String[] permissions,
-      @NonNull @NotNull int[] grantResults) {
-    if (requestCode == REQUEST_CODE_PERMISSIONS)
-  }
+//  @Override
+//  public void onRequestPermissionsResult(int requestCode,
+//      @NonNull @NotNull String[] permissions,
+//      @NonNull @NotNull int[] grantResults) {
+//    if (requestCode == REQUEST_CODE_PERMISSIONS)
+//  }
 
   private void signOut() {
     GoogleSignInService
