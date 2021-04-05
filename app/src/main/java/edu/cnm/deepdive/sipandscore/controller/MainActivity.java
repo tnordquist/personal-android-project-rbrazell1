@@ -21,6 +21,7 @@ import com.google.android.material.snackbar.Snackbar;
 import edu.cnm.deepdive.sipandscore.R;
 import edu.cnm.deepdive.sipandscore.databinding.ActivityMainBinding;
 import edu.cnm.deepdive.sipandscore.service.GoogleSignInService;
+import org.jetbrains.annotations.NotNull;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,6 +42,12 @@ public class MainActivity extends AppCompatActivity {
   }
 
   @Override
+  public boolean onSupportNavigateUp() {
+    return NavigationUI.navigateUp(navController, appBarConfiguration)
+        || super.onSupportNavigateUp();
+  }
+
+  @Override
   public boolean onCreateOptionsMenu(Menu menu) {
     getMenuInflater().inflate(R.menu.options, menu);
     return true;
@@ -53,12 +60,20 @@ public class MainActivity extends AppCompatActivity {
       case R.id.sign_out:
         signOut();
         break;
-//      case
-//        break;
+      case R.id.settings:
+        navController.navigate(R.id.navigation_settings);
+        break;
       default:
         handled = super.onOptionsItemSelected(item);
     }
     return handled;
+  }
+
+  @Override
+  public void onRequestPermissionsResult(int requestCode,
+      @NonNull @NotNull String[] permissions,
+      @NonNull @NotNull int[] grantResults) {
+    if (requestCode == REQUEST_CODE_PERMISSIONS)
   }
 
   private void signOut() {

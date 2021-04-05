@@ -43,6 +43,12 @@
     android:name="edu.cnm.deepdive.sipandscore.controller.BarMapFragment"
     tools:layout="@layout/fragment_bar_map"/>
 
+  <fragment
+    android:id="@+id/navigation_settings"
+    android:label="@string/setting_label"
+    android:name="edu.cnm.deepdive.sipandscore.controller.SettingsFragment"
+    tools:layout="@xml/setting_preference"/>
+
   <dialog
     android:id="@+id/navigation_drink_rating_card"
     tools:label="@string/drink_card_label"

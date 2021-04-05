@@ -18,12 +18,13 @@ public class DrinkListFragment extends Fragment {
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    setHasOptionsMenu(true);
   }
 
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
-    binding = FragmentDrinkListBinding.inflate(inflater);
+    binding = FragmentDrinkListBinding.inflate(inflater, container, false);
     binding.addDrink.setOnClickListener((v) -> {
       DrinkListFragmentDirections.OpenDrinkDetails action = DrinkListFragmentDirections.openDrinkDetails(0);
       Navigation.findNavController(binding.getRoot()).navigate(action);
