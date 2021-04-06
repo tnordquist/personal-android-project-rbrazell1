@@ -1,10 +1,13 @@
 package edu.cnm.deepdive.sipandscore.controller;
 
 import android.app.Dialog;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -19,17 +22,23 @@ import org.jetbrains.annotations.NotNull;
 
 
 public class CameraFragment extends DialogFragment implements TextWatcher {
-// TODO ask if this is the right place to bind to the camera fragment or the Drink rating card fragment. or the other way around
-  private FragmentCameraBinding binding;
 
+  // TODO ask if this is the right place to bind to the camera fragment or the Drink rating card fragment. or the other way around
+  private FragmentCameraBinding binding;
   private AlertDialog dialog;
   private DrinkViewModel drinkViewModel;
   private List<Drink> drinkList;
+  private Uri uri;
+
+  @Override
+  public void onCreate(@Nullable Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+  }
 
   @NonNull
   @NotNull
   @Override
-  public Dialog onCreateDialog(@Nullable  Bundle savedInstanceState) {
+  public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
     binding = FragmentCameraBinding.inflate(
         LayoutInflater.from(getContext()), null, false);
     dialog = new Builder(getContext())
@@ -39,9 +48,21 @@ public class CameraFragment extends DialogFragment implements TextWatcher {
         .setNeutralButton(android.R.string.cancel, (dlg, which) -> {
           /* This shouldn't do anything*/
         })
-        .setPositiveButton(android.R.string.ok, (dlg, which) -> )
+        .setPositiveButton(android.R.string.ok, (dlg, which) -> addDrinkToList())
+        .create();
+    dialog.setOnShowListener((dlg) -> {
+      binding.fragmentCamera.getViewById(R.id.fragment_camera);
+    });
     return dialog;
 
+  }
+
+  @Nullable
+  @Override
+  public View onCreateView(@NonNull LayoutInflater inflater,
+      @Nullable ViewGroup container,
+      @Nullable Bundle savedInstanceState) {
+    return binding.getRoot();
   }
 
   @Override
@@ -59,6 +80,10 @@ public class CameraFragment extends DialogFragment implements TextWatcher {
 
   }
 
+
   private void addDrinkToList() {
-    String name = binding.
+  }
 }
+
+
+
