@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+  android:padding="@dimen/static_spacing"
   android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  tools:context=".controller.BarDetailFragment">
+  android:layout_height="wrap_content"
+  xmlns:tools="http://schemas.android.com/tools">
 
-  <!-- TODO: Update blank fragment layout -->
+  <ImageView
+    android:id="@+id/drink_thumbnail_image"
+    android:layout_width="wrap_content"
+    android:layout_height="125dp"
+    android:layout_margin="@dimen/half_static_spacing"
+    android:layout_marginTop="@dimen/half_static_spacing"
+    android:adjustViewBounds="true"
+    android:scaleType="center"
+    android:src="@drawable/ic_logo"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/drink_thumbnail_title"
+    app:layout_constraintHorizontal_weight="1"
+    tools:ignore="contentDescription"
+    />
+
   <TextView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    android:id="@+id/drink_thumbnail_title"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/static_spacing"
+    android:gravity="start"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toEndOf="@id/drink_thumbnail_image"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_weight="3"
+    android:text="@string/drink_name"
+    />
 
-</FrameLayout>
+  <RatingBar
+    android:id="@+id/drink_thumbnail_rating"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/half_static_spacing"
+    app:layout_constraintTop_toBottomOf="@id/drink_thumbnail_title"
+    app:layout_constraintBottom_toBottomOf="@id/drink_thumbnail_image"
+    app:layout_constraintStart_toEndOf="@id/drink_thumbnail_image"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:numStars="5"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

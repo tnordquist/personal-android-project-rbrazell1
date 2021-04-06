@@ -46,5 +46,7 @@
   <!-- Preferences -->
   <string name="pref_switch">switch</string>
   <string name="camera_navigation_label">Camera</string>
+  <string name="drink_name">Drink name</string>
+  <string name="add_drink_dialog_title">Add Drink</string>
 
 </resources>
