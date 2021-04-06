@@ -48,5 +48,6 @@
   <string name="camera_navigation_label">Camera</string>
   <string name="drink_name">Drink name</string>
   <string name="add_drink_dialog_title">Add Drink</string>
+  <string name="pick_image">Take a new picture</string>
 
 </resources>
