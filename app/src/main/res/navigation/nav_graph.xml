@@ -19,7 +19,17 @@
         android:name="drink_id"
         app:argType="long"/>
     </action>
+    <action
+      android:id="@+id/open_camera"
+      app:destination="@id/navigation_camera"/>
+
   </fragment>
+
+  <fragment
+    android:id="@+id/navigation_camera"
+    android:label="@string/camera_navigation_label"
+    android:name="edu.cnm.deepdive.sipandscore.controller.CameraFragment"
+    tools:layout="@layout/fragment_camera"/>
 
   <fragment
     android:id="@+id/navigation_bars"

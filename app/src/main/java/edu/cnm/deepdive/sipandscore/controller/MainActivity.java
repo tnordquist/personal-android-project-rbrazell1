@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
   private AppBarConfiguration appBarConfiguration;
   private NavController navController;
+  
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {

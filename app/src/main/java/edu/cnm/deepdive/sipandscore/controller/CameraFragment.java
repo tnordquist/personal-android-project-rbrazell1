@@ -1,10 +1,11 @@
-package edu.cnm.deepdive.sipandscore;
+package edu.cnm.deepdive.sipandscore.controller;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import edu.cnm.deepdive.sipandscore.R;
 
 /**
  * A simple {@link Fragment} subclass. Use the {@link CameraFragment#newInstance} factory method to
