@@ -1,11 +1,14 @@
 package edu.cnm.deepdive.sipandscore.controller;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
@@ -13,15 +16,19 @@ import edu.cnm.deepdive.sipandscore.R;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter.OnDrinkListClickHelper;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkListBinding;
+import edu.cnm.deepdive.sipandscore.service.ImageRepository;
 import edu.cnm.deepdive.sipandscore.viewmodel.DrinkViewModel;
+import java.io.IOException;
 
 public class DrinkListFragment extends Fragment implements OnDrinkListClickHelper {
 
   private static final int PICK_IMAGE_REQUEST = 0210;
   private FragmentDrinkListBinding binding;
   private OnDrinkListClickHelper drinkClicker;
-  DrinkViewModel drinkViewModel;
-  DrinkAdapter drinkAdapter;
+  private ImageRepository imageRepository;
+  private DrinkViewModel drinkViewModel;
+  private DrinkAdapter drinkAdapter;
+
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
@@ -38,9 +45,26 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
     return binding.getRoot();
   }
 
+  @Override
   public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
     drinkViewModel = new ViewModelProvider(getActivity()).get(DrinkViewModel.class);
+    imageRepository = new ImageRepository(getContext());
+  }
+
+
+  @Override
+  public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+    if (requestCode == PICK_IMAGE_REQUEST && resultCode == Activity.RESULT_OK && data != null) {
+      try {
+        String path = imageRepository.storePrivateFile(data.getData());
+        //TODO move to after the user fills out rating card and saves it
+        Log.d(getClass().getName(), path);
+      } catch (IOException e) {
+        Log.e(getClass().getName(), e.getMessage(), e);
+      }
+    }
   }
 
   private void pickImage() {
@@ -51,6 +75,8 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
         getString(R.string.pick_image)),
         PICK_IMAGE_REQUEST);
   }
+
+
 
   @Override
   public void onDrinkClick(long id, View view) {

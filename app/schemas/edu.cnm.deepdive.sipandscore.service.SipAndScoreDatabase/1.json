@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "fb7a3de4ebc13577f5223eabf4061aa5",
+    "identityHash": "dfe5e839a0115dd38b5792af59125cda",
     "entities": [
       {
         "tableName": "Bar",
@@ -77,7 +77,7 @@
       },
       {
         "tableName": "Drink",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`drink_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `created` INTEGER, `drink_name` TEXT NOT NULL, `imgUrl` TEXT)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`drink_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `created` INTEGER, `drink_name` TEXT NOT NULL, `path` TEXT)",
         "fields": [
           {
             "fieldPath": "id",
@@ -98,8 +98,8 @@
             "notNull": true
           },
           {
-            "fieldPath": "imgUrl",
-            "columnName": "imgUrl",
+            "fieldPath": "path",
+            "columnName": "path",
             "affinity": "TEXT",
             "notNull": false
           }
@@ -232,7 +232,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fb7a3de4ebc13577f5223eabf4061aa5')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'dfe5e839a0115dd38b5792af59125cda')"
     ]
   }
 }

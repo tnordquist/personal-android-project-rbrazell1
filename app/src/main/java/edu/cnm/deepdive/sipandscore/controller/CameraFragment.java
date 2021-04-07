@@ -36,7 +36,6 @@ public class CameraFragment extends DialogFragment implements TextWatcher {
   }
 
   @NonNull
-  @NotNull
   @Override
   public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
     binding = FragmentCameraBinding.inflate(

@@ -21,7 +21,7 @@ public class Drink {
   @ColumnInfo(name = "drink_name", index = true)
   private String name;
 
-  private String imgUrl;
+  private String path;
 
   public long getId() {
     return id;
@@ -47,11 +47,11 @@ public class Drink {
     this.name = name;
   }
 
-  public String getImgUrl() {
-    return imgUrl;
+  public String getPath() {
+    return path;
   }
 
-  public void setImgUrl(String imgUrl) {
-    this.imgUrl = imgUrl;
+  public void setPath(String path) {
+    this.path = path;
   }
 }
