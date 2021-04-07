@@ -78,7 +78,8 @@ public class DrinkRepository {
           .map((drinkId) -> {
             drink.setId(drinkId);
             return drink;
-          });
+          })
+          .subscribeOn(Schedulers.io());
     }
   }
 

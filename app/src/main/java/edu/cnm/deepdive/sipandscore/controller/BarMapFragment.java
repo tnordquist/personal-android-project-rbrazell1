@@ -42,8 +42,8 @@ public class BarMapFragment extends Fragment implements OnMapReadyCallback {
   @Override
   public void onMapReady(GoogleMap googleMap) {
     // Add a marker in Sydney and move the camera update to show current location
-    LatLng sydney = new LatLng(-34, 151);
-    googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-    googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+    LatLng Abq = new LatLng(35.150250, -106.574840);
+    googleMap.addMarker(new MarkerOptions().position(Abq).title("Marker in Abq"));
+    googleMap.moveCamera(CameraUpdateFactory.newLatLng(Abq));
   }
 }

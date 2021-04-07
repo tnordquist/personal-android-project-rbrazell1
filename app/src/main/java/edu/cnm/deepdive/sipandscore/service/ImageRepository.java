@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.OpenableColumns;
+import io.reactivex.Single;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -42,6 +43,7 @@ public class ImageRepository {
       Files.copy(input, outputFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
       return outputFile.getName();
     }
-
   }
+
+//  public Single<List<Drink>> add(String title, String comment)
 }

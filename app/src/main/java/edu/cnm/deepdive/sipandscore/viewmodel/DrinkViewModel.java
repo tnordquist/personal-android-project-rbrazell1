@@ -46,7 +46,23 @@ public class DrinkViewModel extends AndroidViewModel implements LifecycleObserve
     return throwable;
   }
 
-  public void store(long id, String name) {
-    throwable.postValue(null);
+//  public void store(String title, String comment, String bar) {
+//    throwable.postValue(null);
+//    pending.add(
+//        drinkRepository.save()
+//
+//    )
+//  }
+
+  public void saveDrink(Drink drink) {
+    pending.add(
+        drinkRepository
+            .save(drink)
+        .subscribe(
+            (d) -> {},
+            throwable::postValue
+        )
+    );
   }
+
 }

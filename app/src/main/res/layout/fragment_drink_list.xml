@@ -7,9 +7,6 @@
   android:layout_height="match_parent"
   tools:context=".controller.DrinkListFragment">
 
-
-
-
   <androidx.recyclerview.widget.RecyclerView
     android:id="@+id/drink_recycler_view"
     android:layout_height="0dp"

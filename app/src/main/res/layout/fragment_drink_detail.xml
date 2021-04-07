@@ -30,6 +30,7 @@
       android:layout_height="wrap_content"
       android:scaleType="fitCenter"
       android:adjustViewBounds="true"
+      android:src="@drawable/ic_logo"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
@@ -90,12 +91,19 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintEnd_toEndOf="parent">
 
-      <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-        android:id="@+id/tag_bar"
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/add_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/add_to_bar_hint"
+        android:hint="Add a bar..."
         android:inputType="text"/>
+
+<!--      <androidx.appcompat.widget.AppCompatAutoCompleteTextView-->
+<!--        android:id="@+id/tag_bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="@string/add_to_bar_hint"-->
+<!--        android:inputType="text"/>-->
 
     </com.google.android.material.textfield.TextInputLayout>
 

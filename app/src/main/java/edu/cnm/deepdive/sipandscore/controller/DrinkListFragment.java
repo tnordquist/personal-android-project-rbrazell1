@@ -50,6 +50,11 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
     super.onViewCreated(view, savedInstanceState);
     drinkViewModel = new ViewModelProvider(getActivity()).get(DrinkViewModel.class);
     imageRepository = new ImageRepository(getContext());
+    drinkViewModel.getDrinkList().observe(getViewLifecycleOwner(), (drinkList) -> {
+      if (drinkList != null) {
+        binding.drinkRecyclerView.setAdapter(new DrinkAdapter(getContext(), this::onDrinkClick, drinkList));
+      }
+    });
   }
 
 
@@ -60,13 +65,13 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
       DrinkListFragmentDirections.OpenDrinkDetails openDrinkDetails =
           DrinkListFragmentDirections.openDrinkDetails();
       openDrinkDetails.setImageUri(data.getData());
-//      try {
-//        String path = imageRepository.storePrivateFile(data.getData());
-//        //TODO move to after the user fills out rating card and saves it
-//        Log.d(getClass().getName(), path);
-//      } catch (IOException e) {
-//        Log.e(getClass().getName(), e.getMessage(), e);
-//      }
+      Navigation.findNavController(binding.getRoot()).navigate(openDrinkDetails);
+      try {
+        String path = imageRepository.storePrivateFile(data.getData());
+        Log.d(getClass().getName(), path);
+      } catch (IOException e) {
+        Log.e(getClass().getName(), e.getMessage(), e);
+      }
     }
   }
 

@@ -7,6 +7,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import com.squareup.picasso.Picasso;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter.Holder;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkDetailBinding;
 import edu.cnm.deepdive.sipandscore.databinding.ItemDrinkDetailBinding;
@@ -30,6 +31,10 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
     this.drinkList = drinkList;
   }
 
+  public List<Drink> getDrinkList() {
+    return drinkList;
+  }
+
   @NonNull
   @Override
   public Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -41,7 +46,7 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
   @Override
   public void onBindViewHolder(
       @NonNull Holder holder, int position) {
-   holder.bind(position);
+   holder.bind(drinkList.get(position));
   }
 
   @Override
@@ -63,9 +68,14 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
       binding.getRoot().setOnClickListener((OnClickListener) this);
     }
 
-    private void bind(int position) {
-      drink = drinkList.get(position);
-      binding.drinkThumbnailTitle.setText(drink.getName()); //TODO How do I link the rating to the drink?
+    private void bind(Drink drink) {
+      Picasso.get()
+          .load(drink.getPath())
+          .into(binding.drinkThumbnailImage);
+      String name = drink.getName();
+//      drink = drinkList.get(position);
+      binding.drinkThumbnailTitle.setText(name);
+      //TODO How do I link the rating to the drink?
       binding.drinkThumbnailRating.setRating(drinkRating.getStars());
       binding.getRoot().setOnClickListener(this);
     }

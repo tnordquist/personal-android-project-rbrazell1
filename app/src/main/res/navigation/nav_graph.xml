@@ -71,7 +71,7 @@
     android:id="@+id/navigation_drink_rating_card"
     tools:label="@string/drink_card_label"
     android:name="edu.cnm.deepdive.sipandscore.controller.DrinkDetailFragment"
-    tools:layout="@layout/item_drink_detail">
+    tools:layout="@layout/fragment_drink_detail">
 
     <argument
       android:name="drink_id"
