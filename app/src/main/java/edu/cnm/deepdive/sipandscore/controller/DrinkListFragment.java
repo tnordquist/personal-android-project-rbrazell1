@@ -57,13 +57,16 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
   public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
     super.onActivityResult(requestCode, resultCode, data);
     if (requestCode == PICK_IMAGE_REQUEST && resultCode == Activity.RESULT_OK && data != null) {
-      try {
-        String path = imageRepository.storePrivateFile(data.getData());
-        //TODO move to after the user fills out rating card and saves it
-        Log.d(getClass().getName(), path);
-      } catch (IOException e) {
-        Log.e(getClass().getName(), e.getMessage(), e);
-      }
+      DrinkListFragmentDirections.OpenDrinkDetails openDrinkDetails =
+          DrinkListFragmentDirections.openDrinkDetails();
+      openDrinkDetails.setImageUri(data.getData());
+//      try {
+//        String path = imageRepository.storePrivateFile(data.getData());
+//        //TODO move to after the user fills out rating card and saves it
+//        Log.d(getClass().getName(), path);
+//      } catch (IOException e) {
+//        Log.e(getClass().getName(), e.getMessage(), e);
+//      }
     }
   }
 
@@ -77,11 +80,10 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
   }
 
 
-
   @Override
   public void onDrinkClick(long id, View view) {
     DrinkListFragmentDirections.OpenDrinkDetails openDrinkDetails =
-        DrinkListFragmentDirections.openDrinkDetails(id);
+        DrinkListFragmentDirections.openDrinkDetails();
     openDrinkDetails.setDrinkId(id);
     Navigation.findNavController(view).navigate(openDrinkDetails);
   }

@@ -17,7 +17,15 @@
 
       <argument
         android:name="drink_id"
-        app:argType="long"/>
+        app:argType="long"
+        android:defaultValue="0L"/>
+
+      <argument
+        android:name="image_uri"
+        app:argType="android.net.Uri"
+        app:nullable="true"
+        android:defaultValue="@null"/>
+
     </action>
     <action
       android:id="@+id/open_camera"
@@ -63,11 +71,18 @@
     android:id="@+id/navigation_drink_rating_card"
     tools:label="@string/drink_card_label"
     android:name="edu.cnm.deepdive.sipandscore.controller.DrinkDetailFragment"
-    tools:layout="@layout/fragment_drink_detail">
+    tools:layout="@layout/item_drink_detail">
 
     <argument
       android:name="drink_id"
-      app:argType="long"/>
+      app:argType="long"
+      android:defaultValue="0L"/>
+
+    <argument
+      android:name="image_uri"
+      app:argType="android.net.Uri"
+      app:nullable="true"
+      android:defaultValue="@null"/>
 
   </dialog>
 

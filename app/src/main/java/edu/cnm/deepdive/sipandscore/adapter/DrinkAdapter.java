@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter.Holder;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkDetailBinding;
+import edu.cnm.deepdive.sipandscore.databinding.ItemDrinkDetailBinding;
 import edu.cnm.deepdive.sipandscore.model.entity.Drink;
 import edu.cnm.deepdive.sipandscore.model.entity.DrinkRating;
 import java.util.List;
@@ -32,7 +33,7 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
   @NonNull
   @Override
   public Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-    FragmentDrinkDetailBinding binding = FragmentDrinkDetailBinding.inflate(
+    ItemDrinkDetailBinding binding = ItemDrinkDetailBinding.inflate(
         inflater, parent, false);
     return new Holder(binding, drinkClicker);
   }
@@ -50,12 +51,12 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
 
   class Holder extends RecyclerView.ViewHolder implements OnClickListener {
 
-    private final FragmentDrinkDetailBinding binding;
+    private final ItemDrinkDetailBinding binding;
     OnDrinkListClickHelper drinkClicker;
     private Drink drink;
     private DrinkRating drinkRating;
 
-    public Holder(FragmentDrinkDetailBinding binding, OnDrinkListClickHelper drinkClicker) {
+    public Holder(ItemDrinkDetailBinding binding, OnDrinkListClickHelper drinkClicker) {
       super(binding.getRoot());
       this.binding = binding;
       this.drinkClicker = drinkClicker;
