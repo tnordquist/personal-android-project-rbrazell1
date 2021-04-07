@@ -13,7 +13,6 @@ import androidx.fragment.app.DialogFragment;
 import com.squareup.picasso.Picasso;
 import edu.cnm.deepdive.sipandscore.R;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkDetailBinding;
-import org.jetbrains.annotations.NotNull;
 
 public class DrinkDetailFragment extends DialogFragment {
 
@@ -35,15 +34,20 @@ public class DrinkDetailFragment extends DialogFragment {
   @NonNull
   @Override
   public Dialog onCreateDialog(
-      @Nullable  Bundle savedInstanceState) {
+      @Nullable Bundle savedInstanceState) {
     binding = FragmentDrinkDetailBinding.inflate(
         LayoutInflater.from(getContext()), null, false);
     dialog = new AlertDialog.Builder(getContext())
         .setTitle("Drink Details")
         .setIcon(R.drawable.ic_logo)
         .setView(binding.getRoot())
-        .setNeutralButton(android.R.string.cancel, (dlg, which) -> {})
+        .setNeutralButton(android.R.string.cancel, (dlg, which) -> {
+        })
+        .setPositiveButton(android.R.string.ok, (dlg, which) -> addDrinkToList())
         .create();
+    dialog.setOnShowListener((dlg) -> {
+      binding.getRoot();
+    });
     return dialog;
   }
 
@@ -51,8 +55,13 @@ public class DrinkDetailFragment extends DialogFragment {
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
     if (imageUri != null) {
-      Picasso.get().load(imageUri).into(binding.image);
+      Picasso.get()
+          .load(imageUri)
+          .into(binding.image);
     }
     return binding.getRoot();
+  }
+
+  private void addDrinkToList() {
   }
 }
