@@ -76,7 +76,7 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
 //      drink = drinkList.get(position);
       binding.drinkThumbnailTitle.setText(name);
       //TODO How do I link the rating to the drink?
-      binding.drinkThumbnailRating.setRating(drinkRating.getStars());
+//      binding.drinkThumbnailRating.setRating(drinkRating.getStars());
       binding.getRoot().setOnClickListener(this);
     }
 

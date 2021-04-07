@@ -40,7 +40,6 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
     binding = FragmentDrinkListBinding.inflate(inflater, container, false);
-    binding.drinkRecyclerView.setAdapter(drinkAdapter);
     binding.addDrink.setOnClickListener((v) -> pickImage());
     return binding.getRoot();
   }
@@ -50,9 +49,9 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
     super.onViewCreated(view, savedInstanceState);
     drinkViewModel = new ViewModelProvider(getActivity()).get(DrinkViewModel.class);
     imageRepository = new ImageRepository(getContext());
-    drinkViewModel.getDrinkList().observe(getViewLifecycleOwner(), (drinkList) -> {
+    drinkViewModel.loadDrink().observe(getViewLifecycleOwner(), (drinkList) -> {
       if (drinkList != null) {
-        binding.drinkRecyclerView.setAdapter(new DrinkAdapter(getContext(), this::onDrinkClick, drinkList));
+        binding.drinkRecyclerView.setAdapter(new DrinkAdapter(getContext(), this, drinkList));
       }
     });
   }

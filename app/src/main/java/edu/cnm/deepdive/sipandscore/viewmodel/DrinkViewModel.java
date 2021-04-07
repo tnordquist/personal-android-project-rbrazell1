@@ -6,22 +6,19 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
 import edu.cnm.deepdive.sipandscore.model.entity.Drink;
 import edu.cnm.deepdive.sipandscore.service.DrinkRepository;
 import io.reactivex.disposables.CompositeDisposable;
-import java.util.Date;
 import java.util.List;
-import org.jetbrains.annotations.NotNull;
 
 public class DrinkViewModel extends AndroidViewModel implements LifecycleObserver {
-  
+
   private final DrinkRepository drinkRepository;
   private final MutableLiveData<Drink> drink;
   private final MutableLiveData<List<Drink>> drinkList;
   private final CompositeDisposable pending;
   private final MutableLiveData<Throwable> throwable;
-  
+
 
   public DrinkViewModel drinkViewModel;
 
@@ -58,11 +55,16 @@ public class DrinkViewModel extends AndroidViewModel implements LifecycleObserve
     pending.add(
         drinkRepository
             .save(drink)
-        .subscribe(
-            (d) -> {},
-            throwable::postValue
-        )
+            .subscribe(
+                (d) -> {
+                },
+                throwable::postValue
+            )
     );
+  }
+
+  public LiveData<List<Drink>> loadDrink() {
+    return drinkRepository.getAllByName();
   }
 
 }
