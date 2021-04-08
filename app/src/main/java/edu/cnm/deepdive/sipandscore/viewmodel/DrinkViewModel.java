@@ -8,6 +8,7 @@ import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import edu.cnm.deepdive.sipandscore.model.entity.Drink;
+import edu.cnm.deepdive.sipandscore.model.entity.DrinkRating;
 import edu.cnm.deepdive.sipandscore.service.DrinkRepository;
 import edu.cnm.deepdive.sipandscore.service.ImageRepository;
 import io.reactivex.Single;
@@ -20,6 +21,7 @@ public class DrinkViewModel extends AndroidViewModel implements LifecycleObserve
   private final ImageRepository imageRepository;
   private final MutableLiveData<Drink> drink;
   private final MutableLiveData<List<Drink>> drinkList;
+  private final MutableLiveData<DrinkRating> drinkRating;
   private final CompositeDisposable pending;
   private final MutableLiveData<Throwable> throwable;
 
@@ -32,6 +34,7 @@ public class DrinkViewModel extends AndroidViewModel implements LifecycleObserve
     imageRepository = new ImageRepository(application);
     drink = new MutableLiveData<>();
     drinkList = new MutableLiveData<>();
+    drinkRating = new MutableLiveData<>();
     pending = new CompositeDisposable();
     throwable = new MutableLiveData<>();
   }
@@ -42,6 +45,10 @@ public class DrinkViewModel extends AndroidViewModel implements LifecycleObserve
 
   public LiveData<List<Drink>> getDrinkList() {
     return drinkList;
+  }
+
+  public LiveData<DrinkRating> getDrinkRating() {
+    return drinkRating;
   }
 
   public LiveData<Throwable> getThrowable() {
@@ -58,31 +65,34 @@ public class DrinkViewModel extends AndroidViewModel implements LifecycleObserve
 
   public void saveDrink(Drink drink, Uri uri) {
     throwable.setValue(null);
-    pending.add(
-        (
-            (uri != null)
-                ? imageRepository.storePrivateFile(uri)
-                : Single.just((String) null)
+    pending.add((
+        (uri != null)
+            ? imageRepository.storePrivateFile(uri)
+            : Single.just((String) null))
+        .flatMap((path) -> {
+          if (path != null) {
+            drink.setPath(path);
+          }
+          return drinkRepository
+              .save(drink);
+        })
+        .subscribe(
+            (d) -> {},
+            throwable::postValue
         )
-            .flatMap((path) -> {
-              if (path != null) {
-                drink.setPath(path);
-              }
-              return drinkRepository
-                  .save(drink);
-            })
-            .subscribe(
-                (d) -> {
-                },
-                throwable::postValue
-            )
     );
-
   }
 
   public LiveData<List<Drink>> loadDrink() {
     return drinkRepository.getAllByName();
+  }
 
+  public void saveRating(DrinkRating rating) {
+    throwable.setValue(null);
+    long id = drinkRepository.getDrinkId();
+    pending.add(
+        rating.setDrinkId();
+    )
   }
 
 }

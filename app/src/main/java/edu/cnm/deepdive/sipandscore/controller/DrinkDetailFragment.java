@@ -92,6 +92,7 @@ public class DrinkDetailFragment extends DialogFragment implements TextWatcher {
   private void saveDrinkToList() {
     Drink drink = new Drink();
     String title = binding.imageTitle.getText().toString().trim();
+
     drink.setName(title);
     drink.setPath(imageUri.getPath());
     drinkViewModel.saveDrink(drink, imageUri);
