@@ -1,5 +1,6 @@
 package edu.cnm.deepdive.sipandscore.controller;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,5 +47,7 @@ public class BarMapFragment extends Fragment implements OnMapReadyCallback {
     LatLng Abq = new LatLng(35.150250, -106.574840);
     googleMap.addMarker(new MarkerOptions().position(Abq).title("Marker in Abq"));
     googleMap.moveCamera(CameraUpdateFactory.newLatLng(Abq));
+    googleMap.setMinZoomPreference(15);
   }
+
 }
