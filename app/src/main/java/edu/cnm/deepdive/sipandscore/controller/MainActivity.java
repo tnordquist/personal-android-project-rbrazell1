@@ -1,33 +1,24 @@
 package edu.cnm.deepdive.sipandscore.controller;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import edu.cnm.deepdive.sipandscore.R;
-import edu.cnm.deepdive.sipandscore.databinding.ActivityMainBinding;
 import edu.cnm.deepdive.sipandscore.service.GoogleSignInService;
-import org.jetbrains.annotations.NotNull;
 
 public class MainActivity extends AppCompatActivity {
 
   private AppBarConfiguration appBarConfiguration;
   private NavController navController;
-  
+
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {

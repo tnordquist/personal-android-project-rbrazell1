@@ -13,7 +13,6 @@ import edu.cnm.deepdive.sipandscore.model.pojo.BarWithDrinkRatings;
 import edu.cnm.deepdive.sipandscore.service.BarRepository;
 import io.reactivex.disposables.CompositeDisposable;
 import java.util.List;
-import org.jetbrains.annotations.NotNull;
 
 public class BarViewModel extends AndroidViewModel implements LifecycleObserver {
 

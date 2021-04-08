@@ -19,8 +19,6 @@ import edu.cnm.deepdive.sipandscore.R;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkDetailBinding;
 import edu.cnm.deepdive.sipandscore.model.entity.Drink;
 import edu.cnm.deepdive.sipandscore.viewmodel.DrinkViewModel;
-import java.util.Locale;
-import org.jetbrains.annotations.NotNull;
 
 public class DrinkDetailFragment extends DialogFragment implements TextWatcher {
 
@@ -96,7 +94,7 @@ public class DrinkDetailFragment extends DialogFragment implements TextWatcher {
     String title = binding.imageTitle.getText().toString().trim();
     drink.setName(title);
     drink.setPath(imageUri.getPath());
-    drinkViewModel.saveDrink(drink);
+    drinkViewModel.saveDrink(drink, imageUri);
   }
 
   @Override
@@ -111,7 +109,7 @@ public class DrinkDetailFragment extends DialogFragment implements TextWatcher {
 
   @Override
   public void afterTextChanged(Editable s) {
-  checkSubmitConditions();
+    checkSubmitConditions();
   }
 
   public void checkSubmitConditions() {

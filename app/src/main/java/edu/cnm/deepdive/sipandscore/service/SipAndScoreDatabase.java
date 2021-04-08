@@ -30,15 +30,15 @@ public abstract class SipAndScoreDatabase extends RoomDatabase {
     return InstanceHolder.INSTANCE;
   }
 
+  public static void setContext(Application context) {
+    SipAndScoreDatabase.context = context;
+  }
+
   public abstract DrinkDao getDrinkDao();
 
   public abstract BarDao getBarDao();
 
   public abstract DrinkRatingDao getRatingDao();
-
-  public static void setContext(Application context) {
-    SipAndScoreDatabase.context = context;
-  }
 
   private static class InstanceHolder {
 
@@ -49,6 +49,7 @@ public abstract class SipAndScoreDatabase extends RoomDatabase {
   }
 
   public static class Converters {
+
     @TypeConverter
     public static Long dateToLong(Date value) {
       return (value != null) ? value.getTime() : null;

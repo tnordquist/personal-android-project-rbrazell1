@@ -18,7 +18,6 @@ import edu.cnm.deepdive.sipandscore.databinding.FragmentCameraBinding;
 import edu.cnm.deepdive.sipandscore.model.entity.Drink;
 import edu.cnm.deepdive.sipandscore.viewmodel.DrinkViewModel;
 import java.util.List;
-import org.jetbrains.annotations.NotNull;
 
 
 public class CameraFragment extends DialogFragment implements TextWatcher {

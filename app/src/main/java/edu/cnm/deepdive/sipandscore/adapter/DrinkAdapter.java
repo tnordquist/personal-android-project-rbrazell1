@@ -9,12 +9,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter.Holder;
-import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkDetailBinding;
 import edu.cnm.deepdive.sipandscore.databinding.ItemDrinkDetailBinding;
 import edu.cnm.deepdive.sipandscore.model.entity.Drink;
 import edu.cnm.deepdive.sipandscore.model.entity.DrinkRating;
 import java.util.List;
-import org.jetbrains.annotations.NotNull;
 
 public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
 
@@ -46,12 +44,17 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
   @Override
   public void onBindViewHolder(
       @NonNull Holder holder, int position) {
-   holder.bind(drinkList.get(position));
+    holder.bind(drinkList.get(position));
   }
 
   @Override
   public int getItemCount() {
     return drinkList.size();
+  }
+
+  public interface OnDrinkListClickHelper {
+
+    void onDrinkClick(long id, View view);
   }
 
   class Holder extends RecyclerView.ViewHolder implements OnClickListener {
@@ -65,7 +68,7 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
       super(binding.getRoot());
       this.binding = binding;
       this.drinkClicker = drinkClicker;
-      binding.getRoot().setOnClickListener((OnClickListener) this);
+      binding.getRoot().setOnClickListener(this);
     }
 
     private void bind(Drink drink) {
@@ -85,9 +88,5 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
     public void onClick(View view) {
       drinkClicker.onDrinkClick(drinkList.get(getAdapterPosition()).getId(), view);
     }
-  }
-
-  public interface OnDrinkListClickHelper {
-    void onDrinkClick(long id, View view);
   }
 }

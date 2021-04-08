@@ -3,7 +3,6 @@ package edu.cnm.deepdive.sipandscore.controller;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +17,6 @@ import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter.OnDrinkListClickHelper;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkListBinding;
 import edu.cnm.deepdive.sipandscore.service.ImageRepository;
 import edu.cnm.deepdive.sipandscore.viewmodel.DrinkViewModel;
-import java.io.IOException;
 
 public class DrinkListFragment extends Fragment implements OnDrinkListClickHelper {
 
@@ -51,6 +49,12 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
     imageRepository = new ImageRepository(getContext());
     drinkViewModel.loadDrink().observe(getViewLifecycleOwner(), (drinkList) -> {
       if (drinkList != null) {
+        drinkList.forEach((drink) -> {
+          String path = drink.getPath();
+          if (path != null && !path.isEmpty()) {
+            drink.setPath(imageRepository.resolvePath(path));
+          }
+        });
         binding.drinkRecyclerView.setAdapter(new DrinkAdapter(getContext(), this, drinkList));
       }
     });
@@ -65,12 +69,7 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
           DrinkListFragmentDirections.openDrinkDetails();
       openDrinkDetails.setImageUri(data.getData());
       Navigation.findNavController(binding.getRoot()).navigate(openDrinkDetails);
-      try {
-        String path = imageRepository.storePrivateFile(data.getData());
-        Log.d(getClass().getName(), path);
-      } catch (IOException e) {
-        Log.e(getClass().getName(), e.getMessage(), e);
-      }
+
     }
   }
 
