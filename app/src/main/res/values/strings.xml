@@ -49,5 +49,8 @@
   <string name="drink_name">Drink name</string>
   <string name="add_drink_dialog_title">Add Drink</string>
   <string name="pick_image">Take a new picture</string>
+  <string name="add_address">Add Address</string>
+  <string name="bar_dialog_title">Bar Details</string>
+  <string name="drink_detail_dialog">Drink Details</string>
 
 </resources>

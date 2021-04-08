@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import edu.cnm.deepdive.sipandscore.databinding.FragmentBarMapBinding;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -14,25 +15,26 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import edu.cnm.deepdive.sipandscore.R;
-import org.jetbrains.annotations.NotNull;
 
 public class BarMapFragment extends Fragment implements OnMapReadyCallback {
 
-  private edu.cnm.deepdive.sipandscore.databinding.FragmentBarMapBinding binding;
+  private FragmentBarMapBinding binding;
 
   @Nullable
   @Override
-  public View onCreateView(@NonNull LayoutInflater inflater,
+  public View onCreateView(
+      @NonNull LayoutInflater inflater,
       @Nullable ViewGroup container,
       @Nullable Bundle savedInstanceState) {
-    binding = edu.cnm.deepdive.sipandscore.databinding.FragmentBarMapBinding
+    binding = FragmentBarMapBinding
         .inflate(inflater, container, false);
     return binding.getRoot();
   }
 
   @Override
-  public void onViewCreated(@NonNull @NotNull View view,
-      @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+  public void onViewCreated(
+      @NonNull View view,
+      @Nullable Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
     SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager()
         .findFragmentById(R.id.map_fragment);
@@ -41,7 +43,6 @@ public class BarMapFragment extends Fragment implements OnMapReadyCallback {
 
   @Override
   public void onMapReady(GoogleMap googleMap) {
-    // Add a marker in Sydney and move the camera update to show current location
     LatLng Abq = new LatLng(35.150250, -106.574840);
     googleMap.addMarker(new MarkerOptions().position(Abq).title("Marker in Abq"));
     googleMap.moveCamera(CameraUpdateFactory.newLatLng(Abq));

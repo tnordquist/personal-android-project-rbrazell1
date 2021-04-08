@@ -35,7 +35,9 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
   }
 
   @Override
-  public View onCreateView(LayoutInflater inflater, ViewGroup container,
+  public View onCreateView(
+      LayoutInflater inflater,
+      ViewGroup container,
       Bundle savedInstanceState) {
     binding = FragmentDrinkListBinding.inflate(inflater, container, false);
     binding.addDrink.setOnClickListener((v) -> pickImage());

@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentBarListBinding;
@@ -18,10 +19,16 @@ public class BarListFragment extends Fragment {
   private BarViewModel barViewModel;
 
   @Override
+  public void onCreate(@Nullable Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setHasOptionsMenu(true);
+  }
+
+  @Override
   public View onCreateView(
-      LayoutInflater inflater, ViewGroup container,
-      Bundle savedInstanceState
-  ) {
+      LayoutInflater inflater,
+      ViewGroup container,
+      Bundle savedInstanceState) {
     binding = FragmentBarListBinding.inflate(inflater, container, false);
     binding.barName.setThreshold(1);
     binding.search.setOnClickListener((v) -> {

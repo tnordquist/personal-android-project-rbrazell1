@@ -77,7 +77,7 @@ public class DrinkViewModel extends AndroidViewModel implements LifecycleObserve
               .save(drink);
         })
         .subscribe(
-            (d) -> {},
+            (d) -> {/* TODO explore showing user success*/ },
             throwable::postValue
         )
     );
