@@ -87,12 +87,12 @@ public class DrinkViewModel extends AndroidViewModel implements LifecycleObserve
     return drinkRepository.getAllByName();
   }
 
-  public void saveRating(DrinkRating rating) {
-    throwable.setValue(null);
-    long id = drinkRepository.getDrinkId();
-    pending.add(
-        rating.setDrinkId();
-    )
-  }
+//  public void saveRating(DrinkRating rating) {
+//    throwable.setValue(null);
+//    long id = drinkRepository.getDrinkId();
+//    pending.add(
+//        rating.setDrinkId();
+//    )
+//  }
 
 }
