@@ -1,6 +1,7 @@
 package edu.cnm.deepdive.sipandscore.adapter;
 
 import android.content.Context;
+import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -8,10 +9,13 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
+import edu.cnm.deepdive.sipandscore.R;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter.Holder;
 import edu.cnm.deepdive.sipandscore.databinding.ItemDrinkDetailBinding;
+import edu.cnm.deepdive.sipandscore.model.entity.Bar;
 import edu.cnm.deepdive.sipandscore.model.entity.Drink;
 import edu.cnm.deepdive.sipandscore.model.entity.DrinkRating;
+import java.io.File;
 import java.util.List;
 
 public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
@@ -53,9 +57,10 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
   }
 
   public interface OnDrinkListClickHelper {
-
     void onDrinkClick(long id, View view);
   }
+
+
 
   class Holder extends RecyclerView.ViewHolder implements OnClickListener {
 
@@ -64,7 +69,9 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
     private Drink drink;
     private DrinkRating drinkRating;
 
-    public Holder(ItemDrinkDetailBinding binding, OnDrinkListClickHelper drinkClicker) {
+    public Holder(
+        ItemDrinkDetailBinding binding,
+        OnDrinkListClickHelper drinkClicker) {
       super(binding.getRoot());
       this.binding = binding;
       this.drinkClicker = drinkClicker;
@@ -73,7 +80,7 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
 
     private void bind(Drink drink) {
       Picasso.get()
-          .load(drink.getPath())
+          .load(new File(drink.getPath()))
           .into(binding.drinkThumbnailImage);
 //      int stars = drinkRating.getStars();
       String name = drink.getName();
@@ -81,7 +88,6 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
 //      binding.drinkThumbnailRating.setRating(stars);
       binding.getRoot().setOnClickListener(this);
     }
-
 
     @Override
     public void onClick(View view) {

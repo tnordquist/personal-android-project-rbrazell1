@@ -33,11 +33,6 @@
       android:name=".controller.MainActivity">
     </activity>
 
-    <activity
-      android:label="@string/title_activity_bar_map"
-      android:name=".controller.BarMapFragment">
-    </activity>
-
     <!--
           The API key for Google Maps-based APIs is defined as a string resource.
           (See the file "res/values/google_maps_api.xml").

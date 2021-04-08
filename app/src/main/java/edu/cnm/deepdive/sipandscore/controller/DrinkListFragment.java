@@ -3,6 +3,7 @@ package edu.cnm.deepdive.sipandscore.controller;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,8 +54,10 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
       if (drinkList != null) {
         drinkList.forEach((drink) -> {
           String path = drink.getPath();
+          Log.d(getClass().getName(), path);
           if (path != null && !path.isEmpty()) {
             drink.setPath(imageRepository.resolvePath(path));
+            Log.d(getClass().getName(), drink.getPath());
           }
         });
         binding.drinkRecyclerView.setAdapter(new DrinkAdapter(getContext(), this, drinkList));

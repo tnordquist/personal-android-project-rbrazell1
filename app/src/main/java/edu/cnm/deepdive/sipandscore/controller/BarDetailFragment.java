@@ -94,10 +94,20 @@ public class BarDetailFragment extends DialogFragment implements TextWatcher {
 
   @Override
   public void afterTextChanged(Editable s) {
+    checkSubmitConditions();
   }
 
   public void checkSubmitConditions() {
     Button positive = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
     positive.setEnabled(!binding.barName.getText().toString().trim().isEmpty());
   }
+
+  private void barBind(Bar bar) {
+    String name = bar.getName();
+    String comment = bar.getComment();
+    String address = bar.getAddress();
+    String number = bar.getPhoneNumber();
+
+  }
+
 }

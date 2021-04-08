@@ -14,7 +14,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
-import org.jetbrains.annotations.NotNull;
 
 public class ImageRepository {
 
@@ -35,7 +34,7 @@ public class ImageRepository {
   public Single<String> storePrivateFile(Uri uri) {
     return Single.create(new SingleOnSubscribe<String>() {
       @Override
-      public void subscribe(@NotNull SingleEmitter<String> emitter) throws Exception {
+      public void subscribe(SingleEmitter<String> emitter) throws Exception {
         try (
             Cursor cursor = resolver.query(uri, null, null, null, null);
             InputStream input = resolver.openInputStream(uri)

@@ -2,6 +2,7 @@ package edu.cnm.deepdive.sipandscore;
 
 import android.app.Application;
 import com.facebook.stetho.Stetho;
+import com.squareup.picasso.Picasso;
 import edu.cnm.deepdive.sipandscore.service.GoogleSignInService;
 import edu.cnm.deepdive.sipandscore.service.SipAndScoreDatabase;
 import io.reactivex.schedulers.Schedulers;
@@ -19,6 +20,11 @@ public class SipAndScoreApplication extends Application {
         .delete()
         .subscribeOn(Schedulers.io())
         .subscribe();
+    Picasso.setSingletonInstance(
+        new Picasso.Builder(this)
+            .loggingEnabled(BuildConfig.DEBUG)
+            .build()
+    );
   }
 
 }
