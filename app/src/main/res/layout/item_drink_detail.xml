@@ -38,13 +38,15 @@
 
   <RatingBar
     android:id="@+id/drink_thumbnail_rating"
+    android:isIndicator="true"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:padding="@dimen/half_static_spacing"
     app:layout_constraintTop_toBottomOf="@id/drink_thumbnail_title"
     app:layout_constraintStart_toEndOf="@id/drink_thumbnail_image"
     app:layout_constraintEnd_toEndOf="parent"
-    android:numStars="5"/>
+    android:numStars="5"
+    android:rating="3"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

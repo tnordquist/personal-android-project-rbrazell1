@@ -75,10 +75,10 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
       Picasso.get()
           .load(drink.getPath())
           .into(binding.drinkThumbnailImage);
-      int stars = drinkRating.getStars();
+//      int stars = drinkRating.getStars();
       String name = drink.getName();
       binding.drinkThumbnailTitle.setText(name);
-      binding.drinkThumbnailRating.setRating(stars);
+//      binding.drinkThumbnailRating.setRating(stars);
       binding.getRoot().setOnClickListener(this);
     }
 

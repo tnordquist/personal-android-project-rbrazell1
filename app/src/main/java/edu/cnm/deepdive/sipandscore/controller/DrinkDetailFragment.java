@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RatingBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -27,7 +28,7 @@ public class DrinkDetailFragment extends DialogFragment implements TextWatcher {
   private long drinkId;
   private Uri imageUri;
   private AlertDialog dialog;
-
+  private RatingBar ratingBar;
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
@@ -92,7 +93,7 @@ public class DrinkDetailFragment extends DialogFragment implements TextWatcher {
   private void saveDrinkToList() {
     Drink drink = new Drink();
     String title = binding.imageTitle.getText().toString().trim();
-
+    ratingBar.getRating();
     drink.setName(title);
     drink.setPath(imageUri.getPath());
     drinkViewModel.saveDrink(drink, imageUri);
