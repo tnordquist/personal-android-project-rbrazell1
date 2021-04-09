@@ -33,6 +33,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
+// UPDATE PATH TO PROPERTIES FILES HERE
         def connection_properties = "$projectDir/../../../services/sip-and-score.properties"
 
         resValue "string", "maps_api_key", getProperty(connection_properties, "google_maps_api_key")

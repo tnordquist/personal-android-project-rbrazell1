@@ -62,3 +62,9 @@ Over all consistent font size and locations Consistent and on brand color coordi
 defined buttons and controls Background colors/ images for all screens Key stretch goals Add a way
 share drinks with other users Have drinks upload to a shared database to find average ratings Allow
 other users to see individual drink ratings 
+
+
+
+
+
+## Copyright (c) 2021, Russell Brazell.
