@@ -26,6 +26,12 @@
     catch(err) {
     }
 //-->
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 var pathtoroot = "../../../../../";
 var useModuleDirectories = true;
 loadScripts(document, 'script');</script>
@@ -90,7 +96,7 @@ loadScripts(document, 'script');</script>
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a id="skip.navbar.top">
@@ -133,9 +139,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><code><a href="https://developer.android.com/reference/androidx/lifecycle/LifecycleObserver.html?is-external=true" title="class or interface in androidx.lifecycle" class="externalLink">LifecycleObserver</a></code></dd>
+</dl>
 <hr>
 <pre>public class <span class="typeNameLabel">DrinkViewModel</span>
-extends <a href="https://developer.android.com/reference/androidx/lifecycle/AndroidViewModel.html?is-external=true" title="class or interface in androidx.lifecycle" class="externalLink">AndroidViewModel</a></pre>
+extends <a href="https://developer.android.com/reference/androidx/lifecycle/AndroidViewModel.html?is-external=true" title="class or interface in androidx.lifecycle" class="externalLink">AndroidViewModel</a>
+implements <a href="https://developer.android.com/reference/androidx/lifecycle/LifecycleObserver.html?is-external=true" title="class or interface in androidx.lifecycle" class="externalLink">LifecycleObserver</a></pre>
 </li>
 </ul>
 </div>
@@ -193,6 +204,45 @@ extends <a href="https://developer.android.com/reference/androidx/lifecycle/Andr
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="https://developer.android.com/reference/androidx/lifecycle/LiveData.html?is-external=true" title="class or interface in androidx.lifecycle" class="externalLink">LiveData</a>&lt;<a href="../model/entity/Drink.html" title="class in edu.cnm.deepdive.sipandscore.model.entity">Drink</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDrink()">getDrink</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="https://developer.android.com/reference/androidx/lifecycle/LiveData.html?is-external=true" title="class or interface in androidx.lifecycle" class="externalLink">LiveData</a>&lt;<a href="https://developer.android.com/reference/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../model/entity/Drink.html" title="class in edu.cnm.deepdive.sipandscore.model.entity">Drink</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDrinkList()">getDrinkList</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="https://developer.android.com/reference/androidx/lifecycle/LiveData.html?is-external=true" title="class or interface in androidx.lifecycle" class="externalLink">LiveData</a>&lt;<a href="../model/entity/DrinkRating.html" title="class in edu.cnm.deepdive.sipandscore.model.entity">DrinkRating</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDrinkRating()">getDrinkRating</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="https://developer.android.com/reference/androidx/lifecycle/LiveData.html?is-external=true" title="class or interface in androidx.lifecycle" class="externalLink">LiveData</a>&lt;<a href="https://developer.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getThrowable()">getThrowable</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://developer.android.com/reference/androidx/lifecycle/LiveData.html?is-external=true" title="class or interface in androidx.lifecycle" class="externalLink">LiveData</a>&lt;<a href="https://developer.android.com/reference/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../model/entity/Drink.html" title="class in edu.cnm.deepdive.sipandscore.model.entity">Drink</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#loadDrink()">loadDrink</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#saveDrink(edu.cnm.deepdive.sipandscore.model.entity.Drink,android.net.Uri)">saveDrink</a></span>&#8203;(<a href="../model/entity/Drink.html" title="class in edu.cnm.deepdive.sipandscore.model.entity">Drink</a>&nbsp;drink,
+         <a href="https://developer.android.com/reference/android/net/Uri.html?is-external=true" title="class or interface in android.net" class="externalLink">Uri</a>&nbsp;uri)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.androidx.lifecycle.AndroidViewModel">
 <!--   -->
@@ -255,8 +305,73 @@ extends <a href="https://developer.android.com/reference/androidx/lifecycle/Andr
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DrinkViewModel</h4>
-<pre>public&nbsp;DrinkViewModel&#8203;(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a> @NotNull
+<pre>public&nbsp;DrinkViewModel&#8203;(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                       <a href="https://developer.android.com/reference/android/app/Application.html?is-external=true" title="class or interface in android.app" class="externalLink">Application</a>&nbsp;application)</pre>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<!-- ============ METHOD DETAIL ========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a id="getDrink()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDrink</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://developer.android.com/reference/androidx/lifecycle/LiveData.html?is-external=true" title="class or interface in androidx.lifecycle" class="externalLink">LiveData</a>&lt;<a href="../model/entity/Drink.html" title="class in edu.cnm.deepdive.sipandscore.model.entity">Drink</a>&gt;&nbsp;getDrink()</pre>
+</li>
+</ul>
+<a id="getDrinkList()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDrinkList</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://developer.android.com/reference/androidx/lifecycle/LiveData.html?is-external=true" title="class or interface in androidx.lifecycle" class="externalLink">LiveData</a>&lt;<a href="https://developer.android.com/reference/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../model/entity/Drink.html" title="class in edu.cnm.deepdive.sipandscore.model.entity">Drink</a>&gt;&gt;&nbsp;getDrinkList()</pre>
+</li>
+</ul>
+<a id="getDrinkRating()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDrinkRating</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://developer.android.com/reference/androidx/lifecycle/LiveData.html?is-external=true" title="class or interface in androidx.lifecycle" class="externalLink">LiveData</a>&lt;<a href="../model/entity/DrinkRating.html" title="class in edu.cnm.deepdive.sipandscore.model.entity">DrinkRating</a>&gt;&nbsp;getDrinkRating()</pre>
+</li>
+</ul>
+<a id="getThrowable()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getThrowable</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://developer.android.com/reference/androidx/lifecycle/LiveData.html?is-external=true" title="class or interface in androidx.lifecycle" class="externalLink">LiveData</a>&lt;<a href="https://developer.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&gt;&nbsp;getThrowable()</pre>
+</li>
+</ul>
+<a id="saveDrink(edu.cnm.deepdive.sipandscore.model.entity.Drink,android.net.Uri)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>saveDrink</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;saveDrink&#8203;(<a href="../model/entity/Drink.html" title="class in edu.cnm.deepdive.sipandscore.model.entity">Drink</a>&nbsp;drink,
+                      <a href="https://developer.android.com/reference/android/net/Uri.html?is-external=true" title="class or interface in android.net" class="externalLink">Uri</a>&nbsp;uri)</pre>
+</li>
+</ul>
+<a id="loadDrink()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>loadDrink</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://developer.android.com/reference/androidx/lifecycle/LiveData.html?is-external=true" title="class or interface in androidx.lifecycle" class="externalLink">LiveData</a>&lt;<a href="https://developer.android.com/reference/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../model/entity/Drink.html" title="class in edu.cnm.deepdive.sipandscore.model.entity">Drink</a>&gt;&gt;&nbsp;loadDrink()</pre>
 </li>
 </ul>
 </li>
@@ -319,7 +434,7 @@ extends <a href="https://developer.android.com/reference/androidx/lifecycle/Andr
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a id="skip.navbar.bottom">
