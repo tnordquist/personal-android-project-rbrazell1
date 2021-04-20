@@ -90,6 +90,7 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
 
   @Override
   public void onDrinkClick(long id, View view) {
+//    TODO set The properties
     DrinkListFragmentDirections.OpenDrinkDetails openDrinkDetails =
         DrinkListFragmentDirections.openDrinkDetails();
     openDrinkDetails.setDrinkId(id);
