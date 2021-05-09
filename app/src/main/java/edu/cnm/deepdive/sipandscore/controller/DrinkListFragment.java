@@ -1,36 +1,27 @@
 package edu.cnm.deepdive.sipandscore.controller;
 
 import android.app.Activity;
+
 import android.app.Dialog;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
-import android.provider.MediaStore;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.content.FileProvider;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
-import com.google.android.material.snackbar.BaseTransientBottomBar;
-import com.google.android.material.snackbar.Snackbar;
 import edu.cnm.deepdive.sipandscore.R;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter.OnDrinkListClickHelper;
+import edu.cnm.deepdive.sipandscore.databinding.FragmentChoosePictureBinding;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkListBinding;
 import edu.cnm.deepdive.sipandscore.service.ImageRepository;
 import edu.cnm.deepdive.sipandscore.viewmodel.DrinkViewModel;
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import org.jetbrains.annotations.NotNull;
 
 public class DrinkListFragment extends DialogFragment implements OnDrinkListClickHelper {
 
@@ -62,21 +53,22 @@ public class DrinkListFragment extends DialogFragment implements OnDrinkListClic
     super.onViewCreated(view, savedInstanceState);
     drinkViewModel = new ViewModelProvider(getActivity()).get(DrinkViewModel.class);
     imageRepository = new ImageRepository(getContext());
-    drinkViewModel.loadDrink().observe(getViewLifecycleOwner(), (drinkList) -> {
-      if (drinkList != null) {
-        drinkList.forEach((drink) -> {
-          String path = drink.getPath();
-          Log.d(getClass().getName(), path);
-          if (path != null && !path.isEmpty()) {
-            drink.setPath(imageRepository.resolvePath(path));
-            Log.d(getClass().getName(), drink.getPath());
-          }
-        });
-        binding.drinkRecyclerView.setAdapter(new DrinkAdapter(getContext(), this, drinkList));
-      }
-    });
+    drinkViewModel.loadDrink()
+                  .observe(getViewLifecycleOwner(), (drinkList) -> {
+                    if (drinkList != null) {
+                      drinkList.forEach((drink) -> {
+                        String path = drink.getPath();
+                        Log.d(getClass().getName(), path);
+                        if (path != null && !path.isEmpty()) {
+                          drink.setPath(imageRepository.resolvePath(path));
+                          Log.d(getClass().getName(), drink.getPath());
+                        }
+                      });
+                      binding.drinkRecyclerView.setAdapter(
+                          new DrinkAdapter(getContext(), this, drinkList));
+                    }
+                  });
   }
-
 
   @Override
   public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -85,17 +77,26 @@ public class DrinkListFragment extends DialogFragment implements OnDrinkListClic
       DrinkListFragmentDirections.OpenDrinkDetails openDrinkDetails =
           DrinkListFragmentDirections.openDrinkDetails();
       openDrinkDetails.setImageUri(data.getData());
-      Navigation.findNavController(binding.getRoot()).navigate(openDrinkDetails);
+      Navigation.findNavController(binding.getRoot())
+                .navigate(openDrinkDetails);
 
     }
   }
 
   @NonNull
-  @NotNull
   @Override
-  public Dialog onCreateDialog(
-      @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
-    return super.onCreateDialog(savedInstanceState);
+  public Dialog onCreateDialog(Bundle savedInstanceState) {
+    FragmentChoosePictureBinding pictureBinding =
+        FragmentChoosePictureBinding.inflate(LayoutInflater.from(getContext()));
+
+    return new AlertDialog.Builder(getContext())
+        .setTitle("Add a new picture")
+        .setView(pictureBinding.getRoot())
+        .setNeutralButton(R.string.close, (dlg, which) -> {
+//          Left empty to close dialog
+        })
+        .create();
+
   }
 
   private void pickImage() {
@@ -113,6 +114,7 @@ public class DrinkListFragment extends DialogFragment implements OnDrinkListClic
     DrinkListFragmentDirections.OpenDrinkDetails openDrinkDetails =
         DrinkListFragmentDirections.openDrinkDetails();
     openDrinkDetails.setDrinkId(id);
-    Navigation.findNavController(view).navigate(openDrinkDetails);
+    Navigation.findNavController(view)
+              .navigate(openDrinkDetails);
   }
 }

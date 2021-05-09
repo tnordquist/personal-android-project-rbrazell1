@@ -27,7 +27,7 @@
   <string name="add_drink">Add Drink</string>
   <string name="add_bar">Add Bar</string>
   <string name="find_bar">Find Bar</string>
-
+  <string name="close">Close</string>
   <string name="search_icon_description">Icon to start search with the text as it is currently</string>
   <string name="address_search_button">Search for current address</string>
 
