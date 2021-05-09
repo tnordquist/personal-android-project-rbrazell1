@@ -1,25 +1,38 @@
 package edu.cnm.deepdive.sipandscore.controller;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.content.FileProvider;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
+import com.google.android.material.snackbar.BaseTransientBottomBar;
+import com.google.android.material.snackbar.Snackbar;
 import edu.cnm.deepdive.sipandscore.R;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter.OnDrinkListClickHelper;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkListBinding;
 import edu.cnm.deepdive.sipandscore.service.ImageRepository;
 import edu.cnm.deepdive.sipandscore.viewmodel.DrinkViewModel;
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import org.jetbrains.annotations.NotNull;
 
-public class DrinkListFragment extends Fragment implements OnDrinkListClickHelper {
+public class DrinkListFragment extends DialogFragment implements OnDrinkListClickHelper {
 
   private static final int PICK_IMAGE_REQUEST = 0210;
   private FragmentDrinkListBinding binding;
@@ -27,7 +40,6 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
   private ImageRepository imageRepository;
   private DrinkViewModel drinkViewModel;
   private DrinkAdapter drinkAdapter;
-
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
@@ -78,6 +90,14 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
     }
   }
 
+  @NonNull
+  @NotNull
+  @Override
+  public Dialog onCreateDialog(
+      @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+    return super.onCreateDialog(savedInstanceState);
+  }
+
   private void pickImage() {
     Intent intent = new Intent();
     intent.setType("image/*");
@@ -86,7 +106,6 @@ public class DrinkListFragment extends Fragment implements OnDrinkListClickHelpe
         getString(R.string.pick_image)),
         PICK_IMAGE_REQUEST);
   }
-
 
   @Override
   public void onDrinkClick(long id, View view) {

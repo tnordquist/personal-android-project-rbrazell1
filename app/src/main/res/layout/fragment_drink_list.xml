@@ -5,6 +5,7 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  android:id="@+id/drink_list"
   tools:context=".controller.DrinkListFragment">
 
   <androidx.recyclerview.widget.RecyclerView
@@ -27,4 +28,5 @@
     app:useCompatPadding="true"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,17 +14,25 @@ public class SipAndScoreApplication extends Application {
     super.onCreate();
     GoogleSignInService.setContext(this);
     Stetho.initializeWithDefaults(this);
+    setUpDatabase();
+    setUpPicasso();
+  }
+
+  private void setUpPicasso() {
+    Picasso.setSingletonInstance(
+        new Picasso.Builder(this)
+            .loggingEnabled(BuildConfig.DEBUG)
+            .build()
+    );
+  }
+
+  private void setUpDatabase() {
     SipAndScoreDatabase.setContext(this);
     SipAndScoreDatabase.getInstance()
         .getDrinkDao()
         .delete()
         .subscribeOn(Schedulers.io())
         .subscribe();
-    Picasso.setSingletonInstance(
-        new Picasso.Builder(this)
-            .loggingEnabled(BuildConfig.DEBUG)
-            .build()
-    );
   }
 
 }
