@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.sipandscore.controller;
+package edu.cnm.deepdive.sipandscore.controller.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
+import edu.cnm.deepdive.sipandscore.controller.BarListFragmentDirections;
+import edu.cnm.deepdive.sipandscore.controller.BarListFragmentDirections.OpenBarDetails;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentBarListBinding;
 import edu.cnm.deepdive.sipandscore.model.entity.Bar;
 import edu.cnm.deepdive.sipandscore.viewmodel.BarViewModel;
@@ -37,7 +39,7 @@ public class BarListFragment extends Fragment implements OnClickListener {
     binding.search.setOnClickListener((v) -> {
       barViewModel.setNameFragment(binding.barName.getText().toString().trim());
       binding.addBar.setOnClickListener((c) -> {
-        BarListFragmentDirections.OpenBarDetails openBarDetails =
+        OpenBarDetails openBarDetails =
             BarListFragmentDirections.openBarDetails(getId());
         openBarDetails.setBarId(openBarDetails.getBarId());
         Navigation.findNavController(binding.getRoot()).navigate(openBarDetails);

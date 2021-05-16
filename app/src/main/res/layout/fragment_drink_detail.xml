@@ -7,7 +7,7 @@
   android:layout_height="match_parent"
   android:padding="@dimen/static_spacing"
   android:orientation="vertical"
-  tools:context=".controller.DrinkListFragment">
+  tools:context=".controller.fragment.DrinkListFragment">
 
   <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"

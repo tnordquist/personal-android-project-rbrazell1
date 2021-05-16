@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.sipandscore.controller;
+package edu.cnm.deepdive.sipandscore.controller.fragment;
 
 import android.os.Bundle;
 import androidx.preference.PreferenceFragmentCompat;

@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.sipandscore.controller;
+package edu.cnm.deepdive.sipandscore.controller.fragment;
 
 import android.app.Dialog;
 import android.net.Uri;

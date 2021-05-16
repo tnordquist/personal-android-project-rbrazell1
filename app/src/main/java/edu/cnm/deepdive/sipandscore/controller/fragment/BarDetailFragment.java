@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.sipandscore.controller;
+package edu.cnm.deepdive.sipandscore.controller.fragment;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -16,6 +16,7 @@ import androidx.appcompat.app.AlertDialog.Builder;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.ViewModelProvider;
 import edu.cnm.deepdive.sipandscore.R;
+import edu.cnm.deepdive.sipandscore.controller.BarDetailFragmentArgs;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentBarDetailBinding;
 import edu.cnm.deepdive.sipandscore.model.entity.Bar;
 import edu.cnm.deepdive.sipandscore.viewmodel.BarViewModel;

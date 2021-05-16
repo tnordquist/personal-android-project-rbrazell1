@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.sipandscore.controller;
+package edu.cnm.deepdive.sipandscore.controller.fragment;
 
 import android.app.Activity;
 
@@ -18,6 +18,8 @@ import androidx.navigation.Navigation;
 import edu.cnm.deepdive.sipandscore.R;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter.OnDrinkListClickHelper;
+import edu.cnm.deepdive.sipandscore.controller.DrinkListFragmentDirections;
+import edu.cnm.deepdive.sipandscore.controller.DrinkListFragmentDirections.OpenDrinkDetails;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentChoosePictureBinding;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkListBinding;
 import edu.cnm.deepdive.sipandscore.service.ImageRepository;
@@ -74,7 +76,7 @@ public class DrinkListFragment extends DialogFragment implements OnDrinkListClic
   public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
     super.onActivityResult(requestCode, resultCode, data);
     if (requestCode == PICK_IMAGE_REQUEST && resultCode == Activity.RESULT_OK && data != null) {
-      DrinkListFragmentDirections.OpenDrinkDetails openDrinkDetails =
+      OpenDrinkDetails openDrinkDetails =
           DrinkListFragmentDirections.openDrinkDetails();
       openDrinkDetails.setImageUri(data.getData());
       Navigation.findNavController(binding.getRoot())

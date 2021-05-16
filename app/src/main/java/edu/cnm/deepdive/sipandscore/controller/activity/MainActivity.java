@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.sipandscore.controller;
+package edu.cnm.deepdive.sipandscore.controller.activity;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -8,7 +8,6 @@ import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuItem;
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import androidx.navigation.NavController;
@@ -19,6 +18,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
 import edu.cnm.deepdive.sipandscore.R;
+import edu.cnm.deepdive.sipandscore.controller.activity.LoginActivity;
 import edu.cnm.deepdive.sipandscore.service.GoogleSignInService;
 import java.io.File;
 import java.io.IOException;

@@ -8,7 +8,7 @@
   <fragment
     android:id="@+id/navigation_drinks"
     android:label="@string/title_drinks"
-    android:name="edu.cnm.deepdive.sipandscore.controller.DrinkListFragment"
+    android:name="edu.cnm.deepdive.sipandscore.controller.fragment.DrinkListFragment"
     tools:layout="@layout/fragment_drink_list">
 
     <action
@@ -36,13 +36,13 @@
   <fragment
     android:id="@+id/navigation_camera"
     android:label="@string/camera_navigation_label"
-    android:name="edu.cnm.deepdive.sipandscore.controller.CameraFragment"
+    android:name="edu.cnm.deepdive.sipandscore.controller.fragment.CameraFragment"
     tools:layout="@layout/fragment_camera"/>
 
   <fragment
     android:id="@+id/navigation_bars"
     android:label="@string/title_bars"
-    android:name="edu.cnm.deepdive.sipandscore.controller.BarListFragment"
+    android:name="edu.cnm.deepdive.sipandscore.controller.fragment.BarListFragment"
     tools:layout="@layout/fragment_bar_list">
 
     <action
@@ -58,19 +58,19 @@
   <fragment
     android:id="@+id/navigation_map"
     android:label="@string/title_map"
-    android:name="edu.cnm.deepdive.sipandscore.controller.BarMapFragment"
+    android:name="edu.cnm.deepdive.sipandscore.controller.fragment.BarMapFragment"
     tools:layout="@layout/fragment_bar_map"/>
 
   <fragment
     android:id="@+id/navigation_settings"
     android:label="@string/setting_label"
-    android:name="edu.cnm.deepdive.sipandscore.controller.SettingsFragment"
+    android:name="edu.cnm.deepdive.sipandscore.controller.fragment.SettingsFragment"
     tools:layout="@xml/setting_preference"/>
 
   <dialog
     android:id="@+id/navigation_drink_rating_card"
     tools:label="@string/drink_card_label"
-    android:name="edu.cnm.deepdive.sipandscore.controller.DrinkDetailFragment"
+    android:name="edu.cnm.deepdive.sipandscore.controller.fragment.DrinkDetailFragment"
     tools:layout="@layout/fragment_drink_detail">
 
     <argument
@@ -89,7 +89,7 @@
   <dialog
     android:id="@+id/navigation_bar_rating_card"
     tools:label="@string/bar_card_label"
-    android:name="edu.cnm.deepdive.sipandscore.controller.BarDetailFragment"
+    android:name="edu.cnm.deepdive.sipandscore.controller.fragment.BarDetailFragment"
     tools:layout="@layout/fragment_bar_detail">
 
     <argument

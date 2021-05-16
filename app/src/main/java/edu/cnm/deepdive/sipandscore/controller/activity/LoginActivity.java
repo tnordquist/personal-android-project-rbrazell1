@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.sipandscore.controller;
+package edu.cnm.deepdive.sipandscore.controller.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;

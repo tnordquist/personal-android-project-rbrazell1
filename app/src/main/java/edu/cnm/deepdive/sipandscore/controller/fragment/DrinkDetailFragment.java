@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.sipandscore.controller;
+package edu.cnm.deepdive.sipandscore.controller.fragment;
 
 import android.app.Dialog;
 import android.net.Uri;
@@ -17,6 +17,7 @@ import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.ViewModelProvider;
 import com.squareup.picasso.Picasso;
 import edu.cnm.deepdive.sipandscore.R;
+import edu.cnm.deepdive.sipandscore.controller.DrinkDetailFragmentArgs;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkDetailBinding;
 import edu.cnm.deepdive.sipandscore.model.entity.Bar;
 import edu.cnm.deepdive.sipandscore.model.entity.Drink;
