@@ -98,12 +98,12 @@
         android:hint="Add a bar..."
         android:inputType="text"/>
 
-<!--      <androidx.appcompat.widget.AppCompatAutoCompleteTextView-->
-<!--        android:id="@+id/tag_bar"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:hint="@string/add_to_bar_hint"-->
-<!--        android:inputType="text"/>-->
+      <!--      <androidx.appcompat.widget.AppCompatAutoCompleteTextView-->
+      <!--        android:id="@+id/tag_bar"-->
+      <!--        android:layout_width="match_parent"-->
+      <!--        android:layout_height="wrap_content"-->
+      <!--        android:hint="@string/add_to_bar_hint"-->
+      <!--        android:inputType="text"/>-->
 
     </com.google.android.material.textfield.TextInputLayout>
 

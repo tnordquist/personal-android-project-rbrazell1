@@ -119,18 +119,18 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-      <ImageButton
-        android:id="@+id/search_bar"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_margin="@dimen/static_spacing"
-        android:scaleType="fitCenter"
-        android:adjustViewBounds="true"
-        android:src="@drawable/ic_search"
-        app:layout_constraintTop_toTopOf="@id/phone_number_layout"
-        app:layout_constraintBottom_toBottomOf="@id/phone_number_layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="@string/search_icon_description"/>
+    <ImageButton
+      android:id="@+id/search_bar"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_margin="@dimen/static_spacing"
+      android:scaleType="fitCenter"
+      android:adjustViewBounds="true"
+      android:src="@drawable/ic_search"
+      app:layout_constraintTop_toTopOf="@id/phone_number_layout"
+      app:layout_constraintBottom_toBottomOf="@id/phone_number_layout"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:contentDescription="@string/search_icon_description"/>
 
     <ImageButton
       android:id="@+id/find_address"

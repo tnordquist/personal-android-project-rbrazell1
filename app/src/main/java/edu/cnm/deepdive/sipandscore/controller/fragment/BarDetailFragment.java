@@ -2,7 +2,6 @@ package edu.cnm.deepdive.sipandscore.controller.fragment;
 
 import android.app.Dialog;
 import android.os.Bundle;
-import android.telephony.PhoneNumberFormattingTextWatcher;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -16,7 +15,6 @@ import androidx.appcompat.app.AlertDialog.Builder;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.ViewModelProvider;
 import edu.cnm.deepdive.sipandscore.R;
-import edu.cnm.deepdive.sipandscore.controller.BarDetailFragmentArgs;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentBarDetailBinding;
 import edu.cnm.deepdive.sipandscore.model.entity.Bar;
 import edu.cnm.deepdive.sipandscore.viewmodel.BarViewModel;
@@ -32,7 +30,8 @@ public class BarDetailFragment extends DialogFragment implements TextWatcher {
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     Bundle bundle = getArguments();
-    long barId = BarDetailFragmentArgs.fromBundle(bundle).getBarId();
+    long barId = BarDetailFragmentArgs.fromBundle(bundle)
+                                      .getBarId();
     barViewModel = new ViewModelProvider(getActivity()).get(BarViewModel.class);
   }
 
@@ -56,6 +55,7 @@ public class BarDetailFragment extends DialogFragment implements TextWatcher {
     });
     return dialog;
   }
+
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
@@ -72,10 +72,18 @@ public class BarDetailFragment extends DialogFragment implements TextWatcher {
 
   private void saveBarToList() {
     Bar bar = new Bar();
-    String name = binding.barName.getText().toString().trim();
-    String comment = binding.commentDescription.getText().toString().trim();
-    String number = binding.phoneNumber.getText().toString().trim();
-    String address = binding.addAddress.getText().toString().trim();
+    String name = binding.barName.getText()
+                                 .toString()
+                                 .trim();
+    String comment = binding.commentDescription.getText()
+                                               .toString()
+                                               .trim();
+    String number = binding.phoneNumber.getText()
+                                       .toString()
+                                       .trim();
+    String address = binding.addAddress.getText()
+                                       .toString()
+                                       .trim();
     int rating = (int) binding.starRating.getRating();
     bar.setName(name);
     bar.setComment(comment);
@@ -100,7 +108,10 @@ public class BarDetailFragment extends DialogFragment implements TextWatcher {
 
   public void checkSubmitConditions() {
     Button positive = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
-    positive.setEnabled(!binding.barName.getText().toString().trim().isEmpty());
+    positive.setEnabled(!binding.barName.getText()
+                                        .toString()
+                                        .trim()
+                                        .isEmpty());
   }
 
   private void barBind(Bar bar) {

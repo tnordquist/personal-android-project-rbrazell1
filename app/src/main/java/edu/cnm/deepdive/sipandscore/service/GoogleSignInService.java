@@ -43,9 +43,9 @@ public class GoogleSignInService {
 
   public Single<GoogleSignInAccount> refresh() {
     return Single.create(emitter -> client.silentSignIn()
-        .addOnSuccessListener(this::setAccount)
-        .addOnSuccessListener(emitter::onSuccess)
-        .addOnFailureListener(emitter::onError));
+                                          .addOnSuccessListener(this::setAccount)
+                                          .addOnSuccessListener(emitter::onSuccess)
+                                          .addOnFailureListener(emitter::onError));
   }
 
   public Single<String> refreshBearerToken() {
@@ -73,7 +73,7 @@ public class GoogleSignInService {
 
   public Task<Void> signOut() {
     return client.signOut()
-        .addOnCompleteListener((task -> setAccount(null)));
+                 .addOnCompleteListener((task -> setAccount(null)));
   }
 
   private void setAccount(GoogleSignInAccount account) {

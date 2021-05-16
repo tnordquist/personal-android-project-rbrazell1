@@ -48,7 +48,8 @@ public class LoginActivity extends AppCompatActivity {
           .addOnSuccessListener(this::updateAndSwitch)
           .addOnFailureListener((throwable) ->
               Snackbar.make(binding.getRoot(), R.string.login_failure,
-                  BaseTransientBottomBar.LENGTH_INDEFINITE).show()
+                  BaseTransientBottomBar.LENGTH_INDEFINITE)
+                      .show()
           );
     } else {
       super.onActivityResult(requestCode, resultCode, data);

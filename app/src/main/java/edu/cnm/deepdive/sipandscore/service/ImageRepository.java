@@ -50,7 +50,7 @@ public class ImageRepository {
         }
       }
     })
-        .subscribeOn(Schedulers.io());
+                 .subscribeOn(Schedulers.io());
 
   }
 

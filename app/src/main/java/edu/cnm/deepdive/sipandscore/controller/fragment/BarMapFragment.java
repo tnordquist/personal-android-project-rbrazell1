@@ -1,6 +1,5 @@
 package edu.cnm.deepdive.sipandscore.controller.fragment;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +7,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import edu.cnm.deepdive.sipandscore.databinding.FragmentBarMapBinding;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -16,6 +14,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import edu.cnm.deepdive.sipandscore.R;
+import edu.cnm.deepdive.sipandscore.databinding.FragmentBarMapBinding;
 
 public class BarMapFragment extends Fragment implements OnMapReadyCallback {
 
@@ -45,7 +44,8 @@ public class BarMapFragment extends Fragment implements OnMapReadyCallback {
   @Override
   public void onMapReady(GoogleMap googleMap) {
     LatLng Abq = new LatLng(35.150250, -106.574840);
-    googleMap.addMarker(new MarkerOptions().position(Abq).title("Marker in Abq"));
+    googleMap.addMarker(new MarkerOptions().position(Abq)
+                                           .title("Marker in Abq"));
     googleMap.moveCamera(CameraUpdateFactory.newLatLng(Abq));
     googleMap.setMinZoomPreference(15);
   }

@@ -1,7 +1,6 @@
 package edu.cnm.deepdive.sipandscore.adapter;
 
 import android.content.Context;
-import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -9,10 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
-import edu.cnm.deepdive.sipandscore.R;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter.Holder;
 import edu.cnm.deepdive.sipandscore.databinding.ItemDrinkDetailBinding;
-import edu.cnm.deepdive.sipandscore.model.entity.Bar;
 import edu.cnm.deepdive.sipandscore.model.entity.Drink;
 import edu.cnm.deepdive.sipandscore.model.entity.DrinkRating;
 import java.io.File;
@@ -57,9 +54,9 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
   }
 
   public interface OnDrinkListClickHelper {
+
     void onDrinkClick(long id, View view);
   }
-
 
 
   class Holder extends RecyclerView.ViewHolder implements OnClickListener {
@@ -75,23 +72,26 @@ public class DrinkAdapter extends RecyclerView.Adapter<Holder> {
       super(binding.getRoot());
       this.binding = binding;
       this.drinkClicker = drinkClicker;
-      binding.getRoot().setOnClickListener(this);
+      binding.getRoot()
+             .setOnClickListener(this);
     }
 
     private void bind(Drink drink) {
       Picasso.get()
-          .load(new File(drink.getPath()))
-          .into(binding.drinkThumbnailImage);
+             .load(new File(drink.getPath()))
+             .into(binding.drinkThumbnailImage);
 //      int stars = drinkRating.getStars();
       String name = drink.getName();
       binding.drinkThumbnailTitle.setText(name);
 //      binding.drinkThumbnailRating.setRating(stars);
-      binding.getRoot().setOnClickListener(this);
+      binding.getRoot()
+             .setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-      drinkClicker.onDrinkClick(drinkList.get(getAdapterPosition()).getId(), view);
+      drinkClicker.onDrinkClick(drinkList.get(getAdapterPosition())
+                                         .getId(), view);
     }
   }
 }

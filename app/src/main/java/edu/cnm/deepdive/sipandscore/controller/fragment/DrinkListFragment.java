@@ -1,7 +1,6 @@
 package edu.cnm.deepdive.sipandscore.controller.fragment;
 
 import android.app.Activity;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,10 +17,11 @@ import androidx.navigation.Navigation;
 import edu.cnm.deepdive.sipandscore.R;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter.OnDrinkListClickHelper;
-import edu.cnm.deepdive.sipandscore.controller.DrinkListFragmentDirections;
-import edu.cnm.deepdive.sipandscore.controller.DrinkListFragmentDirections.OpenDrinkDetails;
+import edu.cnm.deepdive.sipandscore.controller.fragment.DrinkListFragmentDirections.OpenDrinkDetails;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentChoosePictureBinding;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkListBinding;
+import edu.cnm.deepdive.sipandscore.model.entity.Drink;
+import edu.cnm.deepdive.sipandscore.service.DrinkRepository;
 import edu.cnm.deepdive.sipandscore.service.ImageRepository;
 import edu.cnm.deepdive.sipandscore.viewmodel.DrinkViewModel;
 

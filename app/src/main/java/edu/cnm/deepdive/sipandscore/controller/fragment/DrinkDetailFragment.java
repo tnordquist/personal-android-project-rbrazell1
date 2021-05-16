@@ -17,9 +17,7 @@ import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.ViewModelProvider;
 import com.squareup.picasso.Picasso;
 import edu.cnm.deepdive.sipandscore.R;
-import edu.cnm.deepdive.sipandscore.controller.DrinkDetailFragmentArgs;
 import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkDetailBinding;
-import edu.cnm.deepdive.sipandscore.model.entity.Bar;
 import edu.cnm.deepdive.sipandscore.model.entity.Drink;
 import edu.cnm.deepdive.sipandscore.model.entity.DrinkRating;
 import edu.cnm.deepdive.sipandscore.viewmodel.DrinkViewModel;
@@ -35,8 +33,10 @@ public class DrinkDetailFragment extends DialogFragment implements TextWatcher {
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     Bundle bundle = getArguments();
-    long drinkId = DrinkDetailFragmentArgs.fromBundle(bundle).getDrinkId();
-    imageUri = DrinkDetailFragmentArgs.fromBundle(bundle).getImageUri();
+    long drinkId = DrinkDetailFragmentArgs.fromBundle(bundle)
+                                          .getDrinkId();
+    imageUri = DrinkDetailFragmentArgs.fromBundle(bundle)
+                                      .getImageUri();
     drinkViewModel = new ViewModelProvider(getActivity()).get(DrinkViewModel.class);
   }
 
@@ -73,8 +73,8 @@ public class DrinkDetailFragment extends DialogFragment implements TextWatcher {
     super.onViewCreated(view, savedInstanceState);
     if (imageUri != null) {
       Picasso.get()
-          .load(imageUri)
-          .into(binding.image);
+             .load(imageUri)
+             .into(binding.image);
     }
     binding.imageTitle.addTextChangedListener(this);
     if (getArguments() != null) {
@@ -87,11 +87,17 @@ public class DrinkDetailFragment extends DialogFragment implements TextWatcher {
   private void saveDrinkToList() {
     Drink drink = new Drink();
     DrinkRating fullRating = new DrinkRating();
-    String title = binding.imageTitle.getText().toString().trim();
-    String comment = binding.commentDescription.getText().toString().trim();
+    String title = binding.imageTitle.getText()
+                                     .toString()
+                                     .trim();
+    String comment = binding.commentDescription.getText()
+                                               .toString()
+                                               .trim();
 //    String bar = binding.addBar.getText().toString().trim();
     int rating = (int) binding.starRating.getRating();
-    String name = binding.addBar.getText().toString().trim();
+    String name = binding.addBar.getText()
+                                .toString()
+                                .trim();
     drink.setName(title);
     fullRating.setDrinkId(drink.getId());
     fullRating.setComment(comment);
@@ -118,6 +124,9 @@ public class DrinkDetailFragment extends DialogFragment implements TextWatcher {
 
   public void checkSubmitConditions() {
     Button positive = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
-    positive.setEnabled(!binding.imageTitle.getText().toString().trim().isEmpty());
+    positive.setEnabled(!binding.imageTitle.getText()
+                                           .toString()
+                                           .trim()
+                                           .isEmpty());
   }
 }

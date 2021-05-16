@@ -29,10 +29,10 @@ public class SipAndScoreApplication extends Application {
   private void setUpDatabase() {
     SipAndScoreDatabase.setContext(this);
     SipAndScoreDatabase.getInstance()
-        .getDrinkDao()
-        .delete()
-        .subscribeOn(Schedulers.io())
-        .subscribe();
+                       .getDrinkDao()
+                       .delete()
+                       .subscribeOn(Schedulers.io())
+                       .subscribe();
   }
 
 }
