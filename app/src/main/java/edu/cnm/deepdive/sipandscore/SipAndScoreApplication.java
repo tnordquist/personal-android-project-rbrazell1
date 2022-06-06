@@ -21,7 +21,7 @@ public class SipAndScoreApplication extends Application {
   private void setUpPicasso() {
     Picasso.setSingletonInstance(
         new Picasso.Builder(this)
-            .loggingEnabled(BuildConfig.DEBUG)
+//            .loggingEnabled(BuildConfig.DEBUG)
             .build()
     );
   }

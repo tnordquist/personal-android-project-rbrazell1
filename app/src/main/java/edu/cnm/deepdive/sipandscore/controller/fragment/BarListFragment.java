@@ -11,8 +11,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
+import edu.cnm.deepdive.codebreaker14.databinding.FragmentBarListBinding;
 import edu.cnm.deepdive.sipandscore.controller.fragment.BarListFragmentDirections.OpenBarDetails;
-import edu.cnm.deepdive.sipandscore.databinding.FragmentBarListBinding;
 import edu.cnm.deepdive.sipandscore.model.entity.Bar;
 import edu.cnm.deepdive.sipandscore.viewmodel.BarViewModel;
 

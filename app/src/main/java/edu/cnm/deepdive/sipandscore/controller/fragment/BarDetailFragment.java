@@ -14,8 +14,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AlertDialog.Builder;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.ViewModelProvider;
-import edu.cnm.deepdive.sipandscore.R;
-import edu.cnm.deepdive.sipandscore.databinding.FragmentBarDetailBinding;
+import edu.cnm.deepdive.codebreaker14.R;
+import edu.cnm.deepdive.codebreaker14.databinding.FragmentBarDetailBinding;
 import edu.cnm.deepdive.sipandscore.model.entity.Bar;
 import edu.cnm.deepdive.sipandscore.viewmodel.BarViewModel;
 

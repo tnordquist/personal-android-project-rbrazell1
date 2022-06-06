@@ -2,7 +2,7 @@ package edu.cnm.deepdive.sipandscore.controller.fragment;
 
 import android.os.Bundle;
 import androidx.preference.PreferenceFragmentCompat;
-import edu.cnm.deepdive.sipandscore.R;
+import edu.cnm.deepdive.codebreaker14.R;
 
 public class SettingsFragment extends PreferenceFragmentCompat {
 

@@ -17,7 +17,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
-import edu.cnm.deepdive.sipandscore.R;
+import edu.cnm.deepdive.codebreaker14.R;
 import edu.cnm.deepdive.sipandscore.service.GoogleSignInService;
 import java.io.File;
 import java.io.IOException;

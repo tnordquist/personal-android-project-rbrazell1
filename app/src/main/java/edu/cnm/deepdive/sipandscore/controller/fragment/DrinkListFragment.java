@@ -14,12 +14,11 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
-import edu.cnm.deepdive.sipandscore.R;
+import edu.cnm.deepdive.codebreaker14.R;
+import edu.cnm.deepdive.codebreaker14.databinding.FragmentChoosePictureBinding;
+import edu.cnm.deepdive.codebreaker14.databinding.FragmentDrinkListBinding;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter;
 import edu.cnm.deepdive.sipandscore.adapter.DrinkAdapter.OnDrinkListClickHelper;
-import edu.cnm.deepdive.sipandscore.controller.fragment.DrinkListFragmentDirections.OpenDrinkDetails;
-import edu.cnm.deepdive.sipandscore.databinding.FragmentChoosePictureBinding;
-import edu.cnm.deepdive.sipandscore.databinding.FragmentDrinkListBinding;
 import edu.cnm.deepdive.sipandscore.model.entity.Drink;
 import edu.cnm.deepdive.sipandscore.service.DrinkRepository;
 import edu.cnm.deepdive.sipandscore.service.ImageRepository;
@@ -72,18 +71,19 @@ public class DrinkListFragment extends DialogFragment implements OnDrinkListClic
                   });
   }
 
-  @Override
+  // TODO finish openDrinkDetails
+/*  @Override
   public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
     super.onActivityResult(requestCode, resultCode, data);
     if (requestCode == PICK_IMAGE_REQUEST && resultCode == Activity.RESULT_OK && data != null) {
       OpenDrinkDetails openDrinkDetails =
-          DrinkListFragmentDirections.openDrinkDetails();
+          DrinkListFragmentDirections.openDrinkDetails(data);
       openDrinkDetails.setImageUri(data.getData());
       Navigation.findNavController(binding.getRoot())
                 .navigate(openDrinkDetails);
 
     }
-  }
+  }*/
 
   @NonNull
   @Override
@@ -112,11 +112,16 @@ public class DrinkListFragment extends DialogFragment implements OnDrinkListClic
 
   @Override
   public void onDrinkClick(long id, View view) {
+
+  }
+
 //    TODO set The properties
+/*  @Override
+  public void onDrinkClick(long id, View view) {
     DrinkListFragmentDirections.OpenDrinkDetails openDrinkDetails =
         DrinkListFragmentDirections.openDrinkDetails();
     openDrinkDetails.setDrinkId(id);
     Navigation.findNavController(view)
               .navigate(openDrinkDetails);
-  }
+  }*/
 }

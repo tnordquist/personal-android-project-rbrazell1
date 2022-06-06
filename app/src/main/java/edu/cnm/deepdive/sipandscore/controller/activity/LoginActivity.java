@@ -8,8 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
-import edu.cnm.deepdive.sipandscore.R;
-import edu.cnm.deepdive.sipandscore.databinding.ActivityLoginBinding;
+import edu.cnm.deepdive.codebreaker14.R;
+import edu.cnm.deepdive.codebreaker14.databinding.ActivityLoginBinding;
 import edu.cnm.deepdive.sipandscore.service.GoogleSignInService;
 
 public class LoginActivity extends AppCompatActivity {

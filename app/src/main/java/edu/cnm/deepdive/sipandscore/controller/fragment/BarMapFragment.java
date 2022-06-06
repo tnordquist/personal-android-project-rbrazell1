@@ -13,8 +13,8 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import edu.cnm.deepdive.sipandscore.R;
-import edu.cnm.deepdive.sipandscore.databinding.FragmentBarMapBinding;
+import edu.cnm.deepdive.codebreaker14.R;
+import edu.cnm.deepdive.codebreaker14.databinding.FragmentBarMapBinding;
 
 public class BarMapFragment extends Fragment implements OnMapReadyCallback {
 
